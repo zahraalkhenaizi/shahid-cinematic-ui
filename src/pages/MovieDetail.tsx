@@ -28,6 +28,7 @@ import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
 import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
+import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -329,6 +330,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Ahmed El Gendy",
     writer: "Ahmed Abdallah, Mohamed Nayer",
     cast: "Ahmad Helmy, Ghada Adel, Khaled El Sawy, Donia Samir Ghanem",
+    videoUrl: "https://youtu.be/example"
+  },
+  "25": {
+    id: 25,
+    title: "وقفة رجالة",
+    image: woqoRabaqaMovie,
+    rating: "7.5",
+    year: "2013",
+    duration: "1h 40m",
+    genre: "Comedy / Drama",
+    language: "Arabic (Egyptian)",
+    description: "A heartfelt comedy-drama about friendship, loyalty, and standing up for what's right. When a group of longtime friends faces a moral dilemma that tests their values and brotherhood, they must decide whether to take the easy path or stand together like real men. The film explores themes of masculinity, integrity, and the meaning of true friendship in modern society. Through humor and emotion, it examines the choices we make and the consequences that follow.",
+    director: "Sameh Abdel Aziz",
+    writer: "Ahmed Abdullah",
+    cast: "Asser Yassin, Amr Youssef, Ahmed Dawood, Ahmed Malek",
     videoUrl: "https://youtu.be/example"
   }
 };
