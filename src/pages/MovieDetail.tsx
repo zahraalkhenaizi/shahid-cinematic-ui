@@ -1,8 +1,9 @@
-import { Play, Plus, Share2, ChevronLeft } from "lucide-react";
+import { Play, Plus, Share2, ChevronLeft, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import ContentCarousel from "@/components/ContentCarousel";
 import { useParams, Link } from "react-router-dom";
+import { useState } from "react";
 import movie1 from "@/assets/movie-1.jpg";
 import movie2 from "@/assets/movie-2.jpg";
 import movie3 from "@/assets/movie-3.jpg";
@@ -31,6 +32,14 @@ const moviesDatabase: Record<string, any> = {
 const MovieDetail = () => {
   const { id } = useParams<{ id: string }>();
   const movie = moviesDatabase[id || "1"] || moviesDatabase["1"];
+  const [showVideo, setShowVideo] = useState(false);
+  
+  // Extract YouTube video ID from URL
+  const getYouTubeEmbedUrl = (url: string) => {
+    const videoId = url.split('/').pop()?.split('?')[0];
+    return `https://www.youtube.com/embed/${videoId}`;
+  };
+
   const recommendations = [
     { id: 1, title: "Night Hunter", image: movie1, rating: "8.5" },
     { id: 2, title: "Space Odyssey", image: movie2, rating: "9.2" },
@@ -42,6 +51,28 @@ const MovieDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+      
+      {/* Video Player Modal */}
+      {showVideo && (
+        <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-6xl aspect-video">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute -top-12 right-0 text-white hover:bg-white/20"
+              onClick={() => setShowVideo(false)}
+            >
+              <X className="h-6 w-6" />
+            </Button>
+            <iframe
+              src={getYouTubeEmbedUrl(movie.videoUrl)}
+              className="w-full h-full rounded-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+      )}
       
       {/* Hero Banner */}
       <section className="relative h-[60vh] overflow-hidden">
@@ -108,7 +139,7 @@ const MovieDetail = () => {
                   variant="hero" 
                   size="lg" 
                   className="gap-2"
-                  onClick={() => window.open(movie.videoUrl, '_blank')}
+                  onClick={() => setShowVideo(true)}
                 >
                   <Play className="h-5 w-5" />
                   Watch Now
