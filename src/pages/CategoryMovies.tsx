@@ -59,7 +59,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 25, title: "وقفة رجالة", image: woqoRabaqaMovie, rating: "7.5" },
       { id: 26, title: "ماما حامل", image: babaHamilMovie, rating: "7.3" },
       { id: 27, title: "حامل اللقب", image: helmAlqalbMovie, rating: "7.2" },
-      { id: 28, title: "وش و وش", image: weshWeshMovie, rating: "7.4" },
+      { id: 28, title: "وش في وش", image: weshWeshMovie, rating: "7.4" },
       { id: 2, title: "Zaki Chan", image: "/placeholder.svg", rating: "7.1" },
       { id: 3, title: "Al Ens Wa Al Nems", image: "/placeholder.svg", rating: "7.5" },
       { id: 4, title: "X Large", image: "/placeholder.svg", rating: "7.0" },
