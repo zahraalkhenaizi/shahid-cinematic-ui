@@ -1,17 +1,16 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
-import { Globe, Film, Palette, Zap, Drama, Laugh } from "lucide-react";
+import { Globe, Languages } from "lucide-react";
 
 const categories = [
-  { id: "arabic", title: "Arabic Movies", icon: Globe, color: "from-primary to-primary/60" },
-  { id: "foreign", title: "Foreign Movies", icon: Film, color: "from-accent to-accent/60" },
-  { id: "indian", title: "Indian Movies", icon: Film, color: "from-primary to-accent" },
-  { id: "turkish", title: "Turkish Movies", icon: Film, color: "from-accent to-primary" },
-  { id: "animation", title: "Animation", icon: Palette, color: "from-primary to-secondary" },
-  { id: "action", title: "Action", icon: Zap, color: "from-destructive to-primary" },
-  { id: "drama", title: "Drama", icon: Drama, color: "from-secondary to-accent" },
-  { id: "comedy", title: "Comedy", icon: Laugh, color: "from-accent to-secondary" },
+  { id: "arabic", title: "Arabic", icon: Globe, color: "from-primary to-primary/60" },
+  { id: "english", title: "English / Foreign", icon: Languages, color: "from-accent to-accent/60" },
+  { id: "indian", title: "Indian", icon: Globe, color: "from-primary to-accent" },
+  { id: "russian", title: "Russian", icon: Languages, color: "from-accent to-primary" },
+  { id: "turkish", title: "Turkish", icon: Globe, color: "from-primary to-secondary" },
+  { id: "korean", title: "Korean", icon: Languages, color: "from-secondary to-accent" },
+  { id: "japanese", title: "Japanese", icon: Globe, color: "from-accent to-secondary" },
 ];
 
 const Movies = () => {
@@ -21,8 +20,8 @@ const Movies = () => {
       
       <main className="container mx-auto px-4 pt-24 pb-12">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold mb-2 text-shadow">Browse Movies</h1>
-          <p className="text-muted-foreground">Explore movies by category and region</p>
+          <h1 className="text-4xl font-bold mb-2 text-shadow">Browse Movies by Language</h1>
+          <p className="text-muted-foreground">Select a language to explore movies</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

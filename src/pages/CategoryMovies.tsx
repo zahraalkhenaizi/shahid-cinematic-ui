@@ -15,48 +15,52 @@ const moviesByCategory: Record<string, any[]> = {
     { id: 5, title: "Microphone", rating: 7.5, year: 2010, image: "/placeholder.svg" },
     { id: 6, title: "The Treasure", rating: 7.3, year: 2017, image: "/placeholder.svg" },
   ],
-  foreign: [
+  english: [
     { id: 7, title: "Inception", rating: 8.8, year: 2010, image: "/placeholder.svg" },
     { id: 8, title: "The Dark Knight", rating: 9.0, year: 2008, image: "/placeholder.svg" },
     { id: 9, title: "Interstellar", rating: 8.7, year: 2014, image: "/placeholder.svg" },
     { id: 10, title: "Parasite", rating: 8.6, year: 2019, image: "/placeholder.svg" },
+    { id: 11, title: "The Shawshank Redemption", rating: 9.3, year: 1994, image: "/placeholder.svg" },
+    { id: 12, title: "Forrest Gump", rating: 8.8, year: 1994, image: "/placeholder.svg" },
   ],
   indian: [
-    { id: 11, title: "3 Idiots", rating: 8.4, year: 2009, image: "/placeholder.svg" },
-    { id: 12, title: "Dangal", rating: 8.3, year: 2016, image: "/placeholder.svg" },
-    { id: 13, title: "PK", rating: 8.1, year: 2014, image: "/placeholder.svg" },
+    { id: 13, title: "3 Idiots", rating: 8.4, year: 2009, image: "/placeholder.svg" },
+    { id: 14, title: "Dangal", rating: 8.3, year: 2016, image: "/placeholder.svg" },
+    { id: 15, title: "PK", rating: 8.1, year: 2014, image: "/placeholder.svg" },
+    { id: 16, title: "Lagaan", rating: 8.1, year: 2001, image: "/placeholder.svg" },
+  ],
+  russian: [
+    { id: 17, title: "Leviathan", rating: 7.6, year: 2014, image: "/placeholder.svg" },
+    { id: 18, title: "Loveless", rating: 7.6, year: 2017, image: "/placeholder.svg" },
+    { id: 19, title: "The Return", rating: 8.0, year: 2003, image: "/placeholder.svg" },
   ],
   turkish: [
-    { id: 14, title: "Miracle in Cell No. 7", rating: 8.2, year: 2019, image: "/placeholder.svg" },
-    { id: 15, title: "Winter Sleep", rating: 8.1, year: 2014, image: "/placeholder.svg" },
+    { id: 20, title: "Miracle in Cell No. 7", rating: 8.2, year: 2019, image: "/placeholder.svg" },
+    { id: 21, title: "Winter Sleep", rating: 8.1, year: 2014, image: "/placeholder.svg" },
+    { id: 22, title: "Once Upon a Time in Anatolia", rating: 7.8, year: 2011, image: "/placeholder.svg" },
   ],
-  animation: [
-    { id: 16, title: "Spider-Verse", rating: 8.4, year: 2018, image: "/placeholder.svg" },
-    { id: 17, title: "Coco", rating: 8.4, year: 2017, image: "/placeholder.svg" },
+  korean: [
+    { id: 23, title: "Parasite", rating: 8.6, year: 2019, image: "/placeholder.svg" },
+    { id: 24, title: "Oldboy", rating: 8.4, year: 2003, image: "/placeholder.svg" },
+    { id: 25, title: "Memories of Murder", rating: 8.1, year: 2003, image: "/placeholder.svg" },
+    { id: 26, title: "Train to Busan", rating: 7.6, year: 2016, image: "/placeholder.svg" },
   ],
-  action: [
-    { id: 18, title: "John Wick", rating: 7.4, year: 2014, image: "/placeholder.svg" },
-    { id: 19, title: "Mad Max", rating: 8.1, year: 2015, image: "/placeholder.svg" },
-  ],
-  drama: [
-    { id: 20, title: "The Shawshank Redemption", rating: 9.3, year: 1994, image: "/placeholder.svg" },
-    { id: 21, title: "Forrest Gump", rating: 8.8, year: 1994, image: "/placeholder.svg" },
-  ],
-  comedy: [
-    { id: 22, title: "The Grand Budapest Hotel", rating: 8.1, year: 2014, image: "/placeholder.svg" },
-    { id: 23, title: "Superbad", rating: 7.6, year: 2007, image: "/placeholder.svg" },
+  japanese: [
+    { id: 27, title: "Spirited Away", rating: 8.6, year: 2001, image: "/placeholder.svg" },
+    { id: 28, title: "Seven Samurai", rating: 8.6, year: 1954, image: "/placeholder.svg" },
+    { id: 29, title: "Your Name", rating: 8.4, year: 2016, image: "/placeholder.svg" },
+    { id: 30, title: "Shoplifters", rating: 7.9, year: 2018, image: "/placeholder.svg" },
   ],
 };
 
 const categoryTitles: Record<string, string> = {
   arabic: "Arabic Movies",
-  foreign: "Foreign Movies",
+  english: "English / Foreign Movies",
   indian: "Indian Movies",
+  russian: "Russian Movies",
   turkish: "Turkish Movies",
-  animation: "Animation",
-  action: "Action",
-  drama: "Drama",
-  comedy: "Comedy",
+  korean: "Korean Movies",
+  japanese: "Japanese Movies",
 };
 
 const CategoryMovies = () => {
