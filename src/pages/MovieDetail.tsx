@@ -35,6 +35,7 @@ import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
 import asheqMovie from "@/assets/asheq-movie.jpg";
 import ayyamMovie from "@/assets/ayyam-movie.jpg";
 import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
+import villa69Movie from "@/assets/villa-69-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -441,6 +442,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Khaled Youssef",
     writer: "Nasser Abdel Rahman",
     cast: "Ahmed Ezz, Ghada Abdel Razek, Khaled Saleh, Sawsan Badr",
+    videoUrl: "https://youtu.be/example"
+  },
+  "19": {
+    id: 19,
+    title: "فيها ايه يعني ؟",
+    image: villa69Movie,
+    rating: "7.2",
+    year: "2008",
+    duration: "1h 50m",
+    genre: "Drama / Social",
+    language: "Arabic (Egyptian)",
+    description: "A thought-provoking social drama that tackles taboo subjects in Egyptian society with honesty and courage. Through interconnected stories of different characters, the film explores controversial topics and challenges conservative attitudes. It asks the bold question 'What's wrong with that?' as it examines personal freedom, societal judgment, and the clash between tradition and modernity. With its unflinching look at social issues and human nature, the film sparked important conversations about tolerance, acceptance, and the right to live authentically.",
+    director: "Tareq El Eryan",
+    writer: "Belal Fadl",
+    cast: "Hani Salama, Menna Shalabi, Ahmed Dawoud, Bushra",
     videoUrl: "https://youtu.be/example"
   }
 };
