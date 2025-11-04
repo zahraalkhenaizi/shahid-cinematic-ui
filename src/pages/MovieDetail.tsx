@@ -10,6 +10,7 @@ import movie3 from "@/assets/movie-3.jpg";
 import movie4 from "@/assets/movie-4.jpg";
 import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 import titanicMovie from "@/assets/titanic-movie.jpg";
+import twilightMovie from "@/assets/twilight-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -42,6 +43,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "James Cameron",
     cast: "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
     videoUrl: "https://youtu.be/CHekzSiZjrY"
+  },
+  "82": {
+    id: 82,
+    title: "Twilight",
+    image: twilightMovie,
+    rating: "5.3",
+    year: "2008",
+    duration: "2h 2m",
+    genre: "Fantasy / Romance",
+    language: "English",
+    description: "Bella Swan has always been a little bit different, never quite fitting in with her peers. When her mother remarries and Bella chooses to live with her father in the rainy little town of Forks, Washington, she doesn't expect much of anything to change. But things do change when she meets the mysterious and dazzlingly beautiful Edward Cullen. Edward is a vampire, but he doesn't have fangs and his family is unique in that they choose not to drink human blood. Intelligent and witty, Edward sees straight into Bella's soul. Soon, they are swept up in a passionate, thrilling and unorthodox romance.",
+    director: "Catherine Hardwicke",
+    writer: "Melissa Rosenberg",
+    cast: "Kristen Stewart, Robert Pattinson, Taylor Lautner, Billy Burke",
+    videoUrl: "https://youtu.be/QDRLSqm_WVg"
   }
 };
 
