@@ -4,6 +4,8 @@ import ContentCarousel from "@/components/ContentCarousel";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
+import ghadarMovie from "@/assets/ghadar-movie.jpg";
+import mantahabMovie from "@/assets/mantahab-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -52,8 +54,10 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 13, title: "Clash of the Titans", image: "/placeholder.svg", rating: "7.0" },
     ],
     romance: [
-      { id: 14, title: "A Day for Women", image: "/placeholder.svg", rating: "7.2" },
-      { id: 15, title: "Asmaa", image: "/placeholder.svg", rating: "7.5" },
+      { id: 14, title: "غدار", image: ghadarMovie, rating: "7.8" },
+      { id: 15, title: "#منتحب", image: mantahabMovie, rating: "7.5" },
+      { id: 16, title: "A Day for Women", image: "/placeholder.svg", rating: "7.2" },
+      { id: 17, title: "Asmaa", image: "/placeholder.svg", rating: "7.5" },
     ],
     thriller: [
       { id: 16, title: "The Island", image: "/placeholder.svg", rating: "7.6" },
