@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
-import { Globe, Film, Palette, Zap, Drama, Laugh, Tv } from "lucide-react";
+import { Globe, Film, Languages, MapPin, Tv, Sparkles, Heart, Flower } from "lucide-react";
 
 const categories = [
-  { id: "arabic", title: "Arabic Series", icon: Globe, color: "from-primary to-primary/60" },
-  { id: "foreign", title: "Foreign Series", icon: Film, color: "from-accent to-accent/60" },
-  { id: "indian", title: "Indian Series", icon: Tv, color: "from-primary to-accent" },
-  { id: "turkish", title: "Turkish Series", icon: Tv, color: "from-accent to-primary" },
-  { id: "korean", title: "Korean Series", icon: Tv, color: "from-primary to-secondary" },
-  { id: "action", title: "Action", icon: Zap, color: "from-destructive to-primary" },
-  { id: "drama", title: "Drama", icon: Drama, color: "from-secondary to-accent" },
-  { id: "comedy", title: "Comedy", icon: Laugh, color: "from-accent to-secondary" },
+  { id: "arabic", title: "Arabic", icon: Globe, color: "from-primary to-primary/60" },
+  { id: "foreign", title: "English / Foreign", icon: Film, color: "from-accent to-accent/60" },
+  { id: "indian", title: "Indian", icon: MapPin, color: "from-primary to-accent" },
+  { id: "russian", title: "Russian", icon: Languages, color: "from-secondary to-primary" },
+  { id: "turkish", title: "Turkish", icon: Heart, color: "from-accent to-primary" },
+  { id: "animation", title: "Animation", icon: Sparkles, color: "from-primary to-secondary" },
+  { id: "korean", title: "Korean", icon: Flower, color: "from-destructive to-accent" },
+  { id: "japanese", title: "Japanese", icon: Tv, color: "from-secondary to-accent" },
 ];
 
 const Series = () => {
