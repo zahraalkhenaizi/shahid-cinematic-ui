@@ -13,6 +13,9 @@ import salonZahraSeries from "@/assets/salon-zahra-series.jpg";
 import jumanSeries from "@/assets/juman-series.jpg";
 import streetSorrowSeries from "@/assets/street-sorrow-series.jpg";
 import highSchoolGirlsSeries from "@/assets/high-school-girls-series.jpg";
+import gunesinKizlariSeries from "@/assets/gunesin-kizlari-series.jpg";
+import kirginCiceklerSeries from "@/assets/kirgin-cicekler-series.jpg";
+import askSeries from "@/assets/ask-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -81,12 +84,15 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   },
   turkish: {
     drama: [
+      { id: 16, title: "Güneşin Kızları", image: gunesinKizlariSeries, rating: "7.9" },
+      { id: 17, title: "Kırgın Çiçekler", image: kirginCiceklerSeries, rating: "7.7" },
       { id: 34, title: "Istanbul Tales", image: "/placeholder.svg", rating: "8.3" },
       { id: 35, title: "The Ottoman", image: "/placeholder.svg", rating: "8.8" },
       { id: 36, title: "Love in Anatolia", image: "/placeholder.svg", rating: "7.9" },
       { id: 37, title: "Bosphorus Nights", image: "/placeholder.svg", rating: "8.5" },
     ],
     romance: [
+      { id: 18, title: "Kiralık Aşk", image: askSeries, rating: "7.6" },
       { id: 38, title: "Endless Love", image: "/placeholder.svg", rating: "7.6" },
       { id: 39, title: "Ask Laftan Anlamaz", image: "/placeholder.svg", rating: "8.0" },
     ],
