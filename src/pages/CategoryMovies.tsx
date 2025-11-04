@@ -107,15 +107,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
       { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
     ],
-    adventure: [
-      { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
-      { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
-      { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
-    ],
-    fantasy: [
-      { id: 64, title: "Maleficent", image: maleficentMovie, rating: "7.0" },
-      { id: 65, title: "Beauty and the Beast", image: beautyBeastMovie, rating: "7.1" },
-    ],
     family: [
       { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
       { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
