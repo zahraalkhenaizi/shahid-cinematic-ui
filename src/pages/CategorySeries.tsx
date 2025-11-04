@@ -33,7 +33,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 13, title: "جمّان", image: jumanSeries, rating: "8.5" },
       { id: 14, title: "من شارع الحزن إلى...", image: streetSorrowSeries, rating: "8.7" },
       { id: 15, title: "بنات الثانوي", image: highSchoolGirlsSeries, rating: "8.3" },
-      { id: 1, title: "أحلى سلطان", image: ahlaSultanSeries, rating: "8.3" },
+      { id: 1, title: "الهوى سلطان", image: ahlaSultanSeries, rating: "8.3" },
       { id: 7, title: "عزمي و أشجان", image: azmiAshganSeries, rating: "8.6" },
       { id: 2, title: "Desert Storm", image: "/placeholder.svg", rating: "8.5" },
       { id: 3, title: "Cairo Nights", image: "/placeholder.svg", rating: "9.0" },
