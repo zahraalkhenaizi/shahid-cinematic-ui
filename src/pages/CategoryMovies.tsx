@@ -83,7 +83,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     ],
     romance: [
       { id: 14, title: "بحبك", image: ghadarMovie, rating: "7.8" },
-      { id: 15, title: "#منتحب", image: mantahabMovie, rating: "7.5" },
+      { id: 15, title: "قصة حب", image: mantahabMovie, rating: "7.5" },
       { id: 16, title: "A Day for Women", image: "/placeholder.svg", rating: "7.2" },
       { id: 17, title: "Asmaa", image: "/placeholder.svg", rating: "7.5" },
     ],
