@@ -20,6 +20,7 @@ import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
+import maleficentMovie from "@/assets/maleficent-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -202,6 +203,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Dean DeBlois, Chris Sanders",
     cast: "Jay Baruchel, Gerard Butler, America Ferrera, Craig Ferguson",
     videoUrl: "https://youtu.be/oKiYuIsPxYk"
+  },
+  "64": {
+    id: 64,
+    title: "Maleficent",
+    image: maleficentMovie,
+    rating: "7.0",
+    year: "2014",
+    duration: "1h 37m",
+    genre: "Adventure / Family / Fantasy",
+    language: "English",
+    description: "A beautiful, pure-hearted young woman with stunning black wings, Maleficent has an idyllic life growing up in a peaceable forest kingdom, until one day when an invading army threatens the harmony of the land. She rises to be the land's fiercest protector, but ultimately suffers a ruthless betrayal that turns her heart to stone. Bent on revenge, Maleficent faces an epic battle with the invading king's successor and, as a result, places a curse upon his newborn infant Aurora. As the child grows, Maleficent realizes that Aurora holds the key to peace in the kingdom and perhaps to Maleficent's true happiness as well.",
+    director: "Robert Stromberg",
+    writer: "Linda Woolverton",
+    cast: "Angelina Jolie, Elle Fanning, Sharlto Copley, Sam Riley",
+    videoUrl: "https://youtu.be/w-XO4XiRop0"
   }
 };
 
