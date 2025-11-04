@@ -11,6 +11,11 @@ import villa69Movie from "@/assets/villa-69-movie.jpg";
 import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
 import elKhaleyaMovie from "@/assets/el-khaleya-movie.jpg";
 import omommmMovie from "@/assets/3omomm-movie.jpg";
+import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
+import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
+import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
+import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
+import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
@@ -48,6 +53,11 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
         cast: "Karim Abdel Aziz, Dina El Sherbiny, Maged El Kedwany, Bayoumi Fouad",
         videoUrl: "https://youtu.be/_jMsLvxCClo?si=3AtJ4NEJYlsX2nAS"
       },
+      { id: 23, title: "قهر من اللحظات الحديدة", image: qaharHadidaMovie, rating: "7.6" },
+      { id: 24, title: "الحرب العالمية الثالثة", image: worldWar3Movie, rating: "7.4" },
+      { id: 25, title: "وقوع رباقة", image: woqoRabaqaMovie, rating: "7.5" },
+      { id: 26, title: "باباحامل", image: babaHamilMovie, rating: "7.3" },
+      { id: 27, title: "حلم القلب", image: helmAlqalbMovie, rating: "7.2" },
       { id: 2, title: "Zaki Chan", image: "/placeholder.svg", rating: "7.1" },
       { id: 3, title: "Al Ens Wa Al Nems", image: "/placeholder.svg", rating: "7.5" },
       { id: 4, title: "X Large", image: "/placeholder.svg", rating: "7.0" },
