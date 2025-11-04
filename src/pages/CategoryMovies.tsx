@@ -9,6 +9,8 @@ import mantahabMovie from "@/assets/mantahab-movie.jpg";
 import wkaanYaLaylaMovie from "@/assets/wkaan-ya-layla-movie.jpg";
 import villa69Movie from "@/assets/villa-69-movie.jpg";
 import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
+import elKhaleyaMovie from "@/assets/el-khaleya-movie.jpg";
+import omommmMovie from "@/assets/3omomm-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
@@ -62,6 +64,8 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     ],
     action: [
       { id: 11, title: "122", image: "/placeholder.svg", rating: "7.8" },
+      { id: 21, title: "الخلية", image: elKhaleyaMovie, rating: "7.5" },
+      { id: 22, title: "عمومم", image: omommmMovie, rating: "7.3" },
       { id: 12, title: "The Treasure", image: "/placeholder.svg", rating: "7.3" },
       { id: 13, title: "Clash of the Titans", image: "/placeholder.svg", rating: "7.0" },
     ],
