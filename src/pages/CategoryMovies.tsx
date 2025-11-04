@@ -113,6 +113,15 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
     ],
+    horror: [
+      { id: 71, title: "The Conjuring", image: "/placeholder.svg", rating: "7.5" },
+      { id: 72, title: "A Quiet Place", image: "/placeholder.svg", rating: "7.5" },
+      { id: 73, title: "Get Out", image: "/placeholder.svg", rating: "7.7" },
+      { id: 74, title: "Hereditary", image: "/placeholder.svg", rating: "7.3" },
+      { id: 75, title: "The Shining", image: "/placeholder.svg", rating: "8.4" },
+      { id: 76, title: "It", image: "/placeholder.svg", rating: "7.3" },
+      { id: 77, title: "Insidious", image: "/placeholder.svg", rating: "6.8" },
+    ],
     disney: [
       { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
       { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
