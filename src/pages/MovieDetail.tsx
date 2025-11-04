@@ -37,6 +37,7 @@ import ayyamMovie from "@/assets/ayyam-movie.jpg";
 import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import villa69Movie from "@/assets/villa-69-movie.jpg";
 import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
+import movie122 from "@/assets/122-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -473,6 +474,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Mohamed Diab",
     writer: "Mohamed Diab",
     cast: "Menna Shalabi, Bassem Samra, Nahed El Sebai, Ahmed Kamal",
+    videoUrl: "https://youtu.be/example"
+  },
+  "11": {
+    id: 11,
+    title: "122",
+    image: movie122,
+    rating: "7.8",
+    year: "2019",
+    duration: "1h 35m",
+    genre: "Action / Thriller",
+    language: "Arabic (Egyptian)",
+    description: "An intense action thriller that takes place entirely within an ambulance racing through Cairo's streets. When an ambulance driver and a paramedic respond to an emergency call, they become trapped in a deadly situation involving criminals and corruption. As they navigate through traffic and danger, they must make split-second decisions to survive. The film delivers non-stop tension and adrenaline while exploring themes of heroism, sacrifice, and the thin line between right and wrong in desperate situations.",
+    director: "Yasir Al Yasiri",
+    writer: "Hosam Mubarak",
+    cast: "Amr Youssef, Afaf Shoieb, Ahmed Dash, Mohamed Mamdouh",
     videoUrl: "https://youtu.be/example"
   }
 };
