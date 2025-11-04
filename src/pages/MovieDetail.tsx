@@ -23,6 +23,7 @@ import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
 import maleficentMovie from "@/assets/maleficent-movie.jpg";
 import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
 import elementalMovie from "@/assets/elemental-movie.jpg";
+import braveMovie from "@/assets/brave-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -250,6 +251,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "John Hoberg, Kat Likkel, Brenda Hsueh",
     cast: "Leah Lewis, Mamoudou Athie, Ronnie del Carmen, Shila Ommi",
     videoUrl: "https://youtu.be/hXzcyx9V0xw"
+  },
+  "67": {
+    id: 67,
+    title: "Brave",
+    image: braveMovie,
+    rating: "7.1",
+    year: "2012",
+    duration: "1h 33m",
+    genre: "Animation / Adventure / Fantasy",
+    language: "English",
+    description: "Set in the Scottish Highlands, Brave follows Merida, a skilled archer and impetuous daughter of King Fergus and Queen Elinor. Determined to carve her own path in life, Merida defies an age-old custom sacred to the unruly lords of the land. When she unleashes chaos in the kingdom by granting herself an ill-fated wish, she must rely on her bravery and archery skills to undo a beastly curse before it's too late. A tale of family bonds, self-discovery, and the courage to change your fate.",
+    director: "Mark Andrews, Brenda Chapman",
+    writer: "Mark Andrews, Steve Purcell, Brenda Chapman, Irene Mecchi",
+    cast: "Kelly Macdonald, Emma Thompson, Billy Connolly, Julie Walters",
+    videoUrl: "https://youtu.be/TEHWDA_6e3M"
   }
 };
 
