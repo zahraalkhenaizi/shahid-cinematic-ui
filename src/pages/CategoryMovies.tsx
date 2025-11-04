@@ -85,11 +85,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
     ],
-    scifi: [
-      { id: 27, title: "Interstellar", image: "/placeholder.svg", rating: "8.7" },
-      { id: 28, title: "Blade Runner 2049", image: "/placeholder.svg", rating: "8.0" },
-      { id: 29, title: "Arrival", image: "/placeholder.svg", rating: "7.9" },
-    ],
     thriller: [
       { id: 30, title: "Se7en", image: "/placeholder.svg", rating: "8.6" },
       { id: 31, title: "Gone Girl", image: "/placeholder.svg", rating: "8.1" },
@@ -178,7 +173,6 @@ const genreTitles: Record<string, string> = {
   thriller: "Thriller",
   adventure: "Adventure",
   family: "Family",
-  scifi: "Sci-Fi",
   fantasy: "Fantasy",
   disney: "Disney Movies",
 };

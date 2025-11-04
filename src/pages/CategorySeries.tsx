@@ -49,11 +49,6 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 19, title: "The Sinner", image: "/placeholder.svg", rating: "8.1" },
       { id: 20, title: "Mindhunter", image: "/placeholder.svg", rating: "8.6" },
     ],
-    scifi: [
-      { id: 21, title: "Stranger Things", image: "/placeholder.svg", rating: "8.7" },
-      { id: 22, title: "Westworld", image: "/placeholder.svg", rating: "8.5" },
-      { id: 23, title: "Black Mirror", image: "/placeholder.svg", rating: "8.8" },
-    ],
     comedy: [
       { id: 24, title: "The Office", image: "/placeholder.svg", rating: "9.0" },
       { id: 25, title: "Brooklyn Nine-Nine", image: "/placeholder.svg", rating: "8.4" },
@@ -119,7 +114,6 @@ const genreTitles: Record<string, string> = {
   thriller: "Thriller",
   adventure: "Adventure",
   family: "Family",
-  scifi: "Sci-Fi",
 };
 
 const CategorySeries = () => {
