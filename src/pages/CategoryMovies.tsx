@@ -41,6 +41,13 @@ import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 import mrMrsSmithMovie from "@/assets/mr-mrs-smith-movie.jpg";
+import krrishMovie from "@/assets/krrish-movie.jpg";
+import raoneMovie from "@/assets/raone-movie.jpg";
+import happyNewYearMovie from "@/assets/happy-new-year-movie.jpg";
+import dilwaleMovie from "@/assets/dilwale-movie.jpg";
+import bajrangiBhaijaanMovie from "@/assets/bajrangi-bhaijaan-movie.jpg";
+import mujhseDostiKarogeMovie from "@/assets/mujhse-dosti-karoge-movie.jpg";
+import kabhiKhushiKabhieGhamMovie from "@/assets/kabhi-khushi-kabhie-gham-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -168,16 +175,23 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   },
   indian: {
     comedy: [
+      { id: 97, title: "Happy New Year", image: happyNewYearMovie, rating: "5.0" },
       { id: 34, title: "3 Idiots", image: "/placeholder.svg", rating: "8.4" },
       { id: 35, title: "PK", image: "/placeholder.svg", rating: "8.1" },
       { id: 36, title: "Andaz Apna Apna", image: "/placeholder.svg", rating: "8.2" },
     ],
     drama: [
+      { id: 98, title: "Bajrangi Bhaijaan", image: bajrangiBhaijaanMovie, rating: "8.1" },
+      { id: 99, title: "Kabhi Khushi Kabhie Gham", image: kabhiKhushiKabhieGhamMovie, rating: "7.4" },
+      { id: 100, title: "Mujhse Dosti Karoge", image: mujhseDostiKarogeMovie, rating: "5.2" },
       { id: 37, title: "Dangal", image: "/placeholder.svg", rating: "8.3" },
       { id: 38, title: "Lagaan", image: "/placeholder.svg", rating: "8.1" },
       { id: 39, title: "Taare Zameen Par", image: "/placeholder.svg", rating: "8.4" },
     ],
     action: [
+      { id: 101, title: "Krrish", image: krrishMovie, rating: "6.4" },
+      { id: 102, title: "Ra.One", image: raoneMovie, rating: "4.8" },
+      { id: 103, title: "Dilwale", image: dilwaleMovie, rating: "5.1" },
       { id: 40, title: "Baahubali", image: "/placeholder.svg", rating: "8.0" },
       { id: 41, title: "War", image: "/placeholder.svg", rating: "6.5" },
     ],
