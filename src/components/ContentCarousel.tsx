@@ -1,6 +1,7 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Content {
   id: number;
@@ -16,6 +17,7 @@ interface ContentCarouselProps {
 
 const ContentCarousel = ({ title, items }: ContentCarouselProps) => {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const navigate = useNavigate();
 
   const scroll = (direction: "left" | "right") => {
     const container = document.getElementById(`carousel-${title}`);
@@ -59,6 +61,7 @@ const ContentCarousel = ({ title, items }: ContentCarouselProps) => {
           <div
             key={item.id}
             className="flex-shrink-0 w-48 cursor-pointer group"
+            onClick={() => navigate(`/movie/${item.id}`)}
           >
             <div className="relative overflow-hidden rounded-lg card-hover">
               <img

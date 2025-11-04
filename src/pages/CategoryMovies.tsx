@@ -19,7 +19,19 @@ const languageTitles: Record<string, string> = {
 const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   arabic: {
     comedy: [
-      { id: 1, title: "Rizk", image: arabicComedyMovie, rating: "8.5" },
+      { 
+        id: 1, 
+        title: "Rizk", 
+        image: arabicComedyMovie, 
+        rating: "8.5",
+        year: "2017",
+        duration: "1h 55m",
+        genre: "Comedy, Crime",
+        description: "A gripping tale of four friends who turn to a life of crime, navigating through hilarious and dangerous situations in the heart of Cairo.",
+        director: "Tarek El Eryan",
+        cast: "Ahmed Ezz, Asser Yassin, Ahmed Dawood",
+        videoUrl: "https://youtu.be/_jMsLvxCClo?si=3AtJ4NEJYlsX2nAS"
+      },
       { id: 2, title: "Zaki Chan", image: "/placeholder.svg", rating: "7.1" },
       { id: 3, title: "Al Ens Wa Al Nems", image: "/placeholder.svg", rating: "7.5" },
       { id: 4, title: "X Large", image: "/placeholder.svg", rating: "7.0" },
