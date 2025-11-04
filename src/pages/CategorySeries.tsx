@@ -8,6 +8,7 @@ import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
 import casablancaSeries from "@/assets/casablanca-series.jpg";
 import raniaWaSakeenaSeries from "@/assets/rania-wa-sakeena-series.jpg";
 import ahlaSultanSeries from "@/assets/ahla-sultan-series.jpg";
+import azmiAshganSeries from "@/assets/azmi-ashgan-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -22,6 +23,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   arabic: {
     drama: [
       { id: 1, title: "أحلى سلطان", image: ahlaSultanSeries, rating: "8.3" },
+      { id: 7, title: "عزمي و أشجان", image: azmiAshganSeries, rating: "8.6" },
       { id: 2, title: "Desert Storm", image: "/placeholder.svg", rating: "8.5" },
       { id: 3, title: "Cairo Nights", image: "/placeholder.svg", rating: "9.0" },
       { id: 4, title: "The Kingdom", image: "/placeholder.svg", rating: "8.8" },
