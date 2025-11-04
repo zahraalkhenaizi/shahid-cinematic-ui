@@ -32,6 +32,7 @@ import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
 import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
 import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
 import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
+import asheqMovie from "@/assets/asheq-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -393,6 +394,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Wael Ihsan",
     writer: "Ahmed Abdallah",
     cast: "Ahmed El Sakka, Maged El Kedwany, Hanan Turk, Edward",
+    videoUrl: "https://youtu.be/example"
+  },
+  "68": {
+    id: 68,
+    title: "عاشق",
+    image: asheqMovie,
+    rating: "8.1",
+    year: "2001",
+    duration: "2h 15m",
+    genre: "Drama / Romance",
+    language: "Arabic (Egyptian)",
+    description: "A powerful and emotional drama about passionate love that transcends social boundaries. The story follows a young man from a humble background who falls deeply in love with a woman from a wealthy family. As they navigate the challenges of class differences, family opposition, and societal expectations, their love is tested to its limits. The film beautifully portrays the intensity of first love and the sacrifices one makes for it. A timeless tale of devotion, heartbreak, and the enduring power of true love.",
+    director: "Magdy Ahmed Ali",
+    writer: "Magdy Ahmed Ali",
+    cast: "Hani Salama, Hanan Turk, Khaled Abol Naga, Mona Zaki",
     videoUrl: "https://youtu.be/example"
   }
 };
