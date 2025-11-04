@@ -39,6 +39,7 @@ import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
+import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -128,6 +129,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
     ],
     comedy: [
+      { id: 95, title: "White Chicks", image: whiteChicksMovie, rating: "5.8" },
       { id: 87, title: "The Hangover", image: "/placeholder.svg", rating: "7.7" },
       { id: 88, title: "Bridesmaids", image: "/placeholder.svg", rating: "6.8" },
       { id: 89, title: "Superbad", image: "/placeholder.svg", rating: "7.6" },
