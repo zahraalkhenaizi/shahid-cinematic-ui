@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import wkaanYaLaylaSeries from "@/assets/wkaan-ya-layla-movie.jpg";
 import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
 import casablancaSeries from "@/assets/casablanca-series.jpg";
+import raniaWaSakeenaSeries from "@/assets/rania-wa-sakeena-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -27,6 +28,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     ],
     comedy: [
       { id: 6, title: "جت سليمة", image: jetSalimaSeries, rating: "8.2" },
+      { id: 10, title: "رانيا وسكينة", image: raniaWaSakeenaSeries, rating: "8.0" },
       { id: 7, title: "Laugh Nights", image: "/placeholder.svg", rating: "7.8" },
       { id: 8, title: "Cairo Comedy", image: "/placeholder.svg", rating: "8.1" },
       { id: 9, title: "Family Laughs", image: "/placeholder.svg", rating: "7.5" },
