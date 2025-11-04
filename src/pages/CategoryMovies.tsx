@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import ContentCarousel from "@/components/ContentCarousel";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -18,7 +19,7 @@ const languageTitles: Record<string, string> = {
 const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   arabic: {
     comedy: [
-      { id: 1, title: "Rizk", image: "/placeholder.svg", rating: "8.2" },
+      { id: 1, title: "Rizk", image: arabicComedyMovie, rating: "8.5" },
       { id: 2, title: "Zaki Chan", image: "/placeholder.svg", rating: "7.1" },
       { id: 3, title: "Al Ens Wa Al Nems", image: "/placeholder.svg", rating: "7.5" },
       { id: 4, title: "X Large", image: "/placeholder.svg", rating: "7.0" },
