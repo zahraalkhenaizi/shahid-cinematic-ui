@@ -119,7 +119,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 21, title: "John Wick", image: "/placeholder.svg", rating: "7.4" },
       { id: 22, title: "The Matrix", image: "/placeholder.svg", rating: "8.7" },
     ],
-    drama: [
+    romantic: [
       { id: 79, title: "Titanic", image: titanicMovie, rating: "7.9" },
       { id: 80, title: "Me Before You", image: meBeforeYouMovie, rating: "7.4" },
       { id: 81, title: "How to Lose a Guy in 10 Days", image: howToLoseAGuyMovie, rating: "6.4" },
@@ -225,6 +225,7 @@ const genreTitles: Record<string, string> = {
   comedy: "Comedy",
   drama: "Drama",
   romance: "Romance",
+  romantic: "Romantic",
   horror: "Horror",
   action: "Action",
   adventure: "Adventure",
