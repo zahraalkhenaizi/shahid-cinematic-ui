@@ -5,6 +5,7 @@ import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import wkaanYaLaylaSeries from "@/assets/wkaan-ya-layla-movie.jpg";
 import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
+import casablancaSeries from "@/assets/casablanca-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -31,8 +32,9 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 9, title: "Family Laughs", image: "/placeholder.svg", rating: "7.5" },
     ],
     action: [
-      { id: 9, title: "The Chase", image: "/placeholder.svg", rating: "8.4" },
-      { id: 10, title: "Desert Warriors", image: "/placeholder.svg", rating: "8.0" },
+      { id: 9, title: "كازابلانكا", image: casablancaSeries, rating: "8.6" },
+      { id: 10, title: "The Chase", image: "/placeholder.svg", rating: "8.4" },
+      { id: 11, title: "Desert Warriors", image: "/placeholder.svg", rating: "8.0" },
     ],
     romance: [
       { id: 11, title: "وكأن يا ليلى", image: wkaanYaLaylaSeries, rating: "8.2" },
