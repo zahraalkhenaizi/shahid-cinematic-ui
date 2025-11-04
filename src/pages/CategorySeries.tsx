@@ -31,10 +31,6 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 9, title: "The Chase", image: "/placeholder.svg", rating: "8.4" },
       { id: 10, title: "Desert Warriors", image: "/placeholder.svg", rating: "8.0" },
     ],
-    thriller: [
-      { id: 11, title: "Dark Secrets", image: "/placeholder.svg", rating: "8.6" },
-      { id: 12, title: "The Mystery", image: "/placeholder.svg", rating: "8.2" },
-    ],
   },
   foreign: {
     drama: [
@@ -43,11 +39,6 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 15, title: "Breaking Dawn", image: "/placeholder.svg", rating: "9.5" },
       { id: 16, title: "The Bridge", image: "/placeholder.svg", rating: "8.4" },
       { id: 17, title: "Northern Lights", image: "/placeholder.svg", rating: "8.9" },
-    ],
-    thriller: [
-      { id: 18, title: "True Detective", image: "/placeholder.svg", rating: "9.0" },
-      { id: 19, title: "The Sinner", image: "/placeholder.svg", rating: "8.1" },
-      { id: 20, title: "Mindhunter", image: "/placeholder.svg", rating: "8.6" },
     ],
     comedy: [
       { id: 24, title: "The Office", image: "/placeholder.svg", rating: "9.0" },
@@ -60,10 +51,6 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 27, title: "Sacred Games", image: "/placeholder.svg", rating: "9.1" },
       { id: 28, title: "Delhi Crime", image: "/placeholder.svg", rating: "8.9" },
       { id: 29, title: "Mirzapur", image: "/placeholder.svg", rating: "8.7" },
-    ],
-    thriller: [
-      { id: 30, title: "Breathe", image: "/placeholder.svg", rating: "8.3" },
-      { id: 31, title: "Paatal Lok", image: "/placeholder.svg", rating: "8.2" },
     ],
     comedy: [
       { id: 32, title: "Panchayat", image: "/placeholder.svg", rating: "8.8" },
@@ -81,18 +68,8 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 38, title: "Endless Love", image: "/placeholder.svg", rating: "7.6" },
       { id: 39, title: "Ask Laftan Anlamaz", image: "/placeholder.svg", rating: "8.0" },
     ],
-    thriller: [
-      { id: 40, title: "Ethos", image: "/placeholder.svg", rating: "7.8" },
-    ],
   },
   korean: {
-    thriller: [
-      { id: 41, title: "Seoul Station", image: "/placeholder.svg", rating: "9.3" },
-      { id: 42, title: "Squid Game", image: "/placeholder.svg", rating: "9.6" },
-      { id: 43, title: "Kingdom", image: "/placeholder.svg", rating: "9.0" },
-      { id: 44, title: "Hellbound", image: "/placeholder.svg", rating: "8.7" },
-      { id: 45, title: "Sweet Home", image: "/placeholder.svg", rating: "7.4" },
-    ],
     drama: [
       { id: 46, title: "It's Okay to Not Be Okay", image: "/placeholder.svg", rating: "8.7" },
       { id: 47, title: "Hospital Playlist", image: "/placeholder.svg", rating: "9.1" },
@@ -111,7 +88,6 @@ const genreTitles: Record<string, string> = {
   romance: "Romance",
   horror: "Horror",
   action: "Action",
-  thriller: "Thriller",
   adventure: "Adventure",
   family: "Family",
 };

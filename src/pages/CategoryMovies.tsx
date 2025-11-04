@@ -66,10 +66,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 16, title: "A Day for Women", image: "/placeholder.svg", rating: "7.2" },
       { id: 17, title: "Asmaa", image: "/placeholder.svg", rating: "7.5" },
     ],
-    thriller: [
-      { id: 16, title: "The Island", image: "/placeholder.svg", rating: "7.6" },
-      { id: 17, title: "Hepta", image: "/placeholder.svg", rating: "7.4" },
-    ],
   },
   english: {
     action: [
@@ -84,10 +80,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 24, title: "Forrest Gump", image: "/placeholder.svg", rating: "8.8" },
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
-    ],
-    thriller: [
-      { id: 30, title: "Se7en", image: "/placeholder.svg", rating: "8.6" },
-      { id: 31, title: "Gone Girl", image: "/placeholder.svg", rating: "8.1" },
     ],
     disney: [
       { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
@@ -120,12 +112,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     ],
   },
   korean: {
-    thriller: [
-      { id: 42, title: "Parasite", image: "/placeholder.svg", rating: "8.6" },
-      { id: 43, title: "Oldboy", image: "/placeholder.svg", rating: "8.4" },
-      { id: 44, title: "Memories of Murder", image: "/placeholder.svg", rating: "8.1" },
-      { id: 45, title: "The Wailing", image: "/placeholder.svg", rating: "7.5" },
-    ],
     action: [
       { id: 46, title: "Train to Busan", image: "/placeholder.svg", rating: "7.6" },
       { id: 47, title: "The Villainess", image: "/placeholder.svg", rating: "6.7" },
@@ -170,7 +156,6 @@ const genreTitles: Record<string, string> = {
   romance: "Romance",
   horror: "Horror",
   action: "Action",
-  thriller: "Thriller",
   adventure: "Adventure",
   family: "Family",
   fantasy: "Fantasy",
