@@ -25,6 +25,7 @@ import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
 import elementalMovie from "@/assets/elemental-movie.jpg";
 import braveMovie from "@/assets/brave-movie.jpg";
 import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
+import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -282,6 +283,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Gina Wendkos",
     cast: "Anne Hathaway, Julie Andrews, Hector Elizondo, Heather Matarazzo",
     videoUrl: "https://youtu.be/CzcketBxs1w"
+  },
+  "84": {
+    id: 84,
+    title: "The Parent Trap",
+    image: parentTrapMovie,
+    rating: "6.6",
+    year: "1998",
+    duration: "2h 8m",
+    genre: "Adventure / Comedy / Family",
+    language: "English",
+    description: "Identical twins Annie and Hallie, separated at birth and each raised by one of their biological parents, discover each other for the first time at summer camp and make a pact to swap places. Annie will go to London to meet their mother, and Hallie will go to California to meet their father. But when they realize their parents are meant to be together, the girls scheme to reunite them by switching back. Their plan becomes complicated when their father's new fiancée threatens to come between the family. A heartwarming tale of love, family, and the unbreakable bond between twins.",
+    director: "Nancy Meyers",
+    writer: "David Swift, Nancy Meyers, Charles Shyer",
+    cast: "Lindsay Lohan, Dennis Quaid, Natasha Richardson, Elaine Hendrix",
+    videoUrl: "https://youtu.be/CQv-MTSoe-k"
   }
 };
 
