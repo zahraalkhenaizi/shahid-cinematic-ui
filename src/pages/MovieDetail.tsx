@@ -24,6 +24,7 @@ import maleficentMovie from "@/assets/maleficent-movie.jpg";
 import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
 import elementalMovie from "@/assets/elemental-movie.jpg";
 import braveMovie from "@/assets/brave-movie.jpg";
+import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -266,6 +267,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Mark Andrews, Steve Purcell, Brenda Chapman, Irene Mecchi",
     cast: "Kelly Macdonald, Emma Thompson, Billy Connolly, Julie Walters",
     videoUrl: "https://youtu.be/TEHWDA_6e3M"
+  },
+  "83": {
+    id: 83,
+    title: "The Princess Diaries",
+    image: princessDiariesMovie,
+    rating: "6.4",
+    year: "2001",
+    duration: "1h 55m",
+    genre: "Comedy / Family / Romance",
+    language: "English",
+    description: "Mia Thermopolis is a shy, unpopular fifteen-year-old who lives with her artist mother in San Francisco. Everything changes when her estranged grandmother arrives and reveals that Mia is the crown princess of the small European country of Genovia. With only a few weeks to transform from a socially awkward teenager into a poised princess, Mia must decide whether she wants to accept her royal heritage and all the responsibilities that come with it. Along the way, she discovers her inner strength, finds true friendship, and learns valuable lessons about staying true to herself.",
+    director: "Garry Marshall",
+    writer: "Gina Wendkos",
+    cast: "Anne Hathaway, Julie Andrews, Hector Elizondo, Heather Matarazzo",
+    videoUrl: "https://youtu.be/CzcketBxs1w"
   }
 };
 
