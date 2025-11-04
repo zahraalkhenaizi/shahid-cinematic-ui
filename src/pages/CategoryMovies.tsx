@@ -18,7 +18,6 @@ const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
   english: "English / Foreign Movies",
   indian: "Indian Movies",
-  disney: "Disney Movies",
   russian: "Russian Movies",
   turkish: "Turkish Movies",
   korean: "Korean Movies",
@@ -99,6 +98,19 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 32, title: "The Grand Budapest Hotel", image: "/placeholder.svg", rating: "8.1" },
       { id: 33, title: "Superbad", image: "/placeholder.svg", rating: "7.6" },
     ],
+    adventure: [
+      { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
+      { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
+      { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
+    ],
+    fantasy: [
+      { id: 64, title: "Maleficent", image: maleficentMovie, rating: "7.0" },
+      { id: 65, title: "Beauty and the Beast", image: beautyBeastMovie, rating: "7.1" },
+    ],
+    family: [
+      { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
+      { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
+    ],
   },
   indian: {
     comedy: [
@@ -157,21 +169,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 58, title: "Leviathan", image: "/placeholder.svg", rating: "7.6" },
       { id: 59, title: "Loveless", image: "/placeholder.svg", rating: "7.6" },
       { id: 60, title: "The Return", image: "/placeholder.svg", rating: "8.0" },
-    ],
-  },
-  disney: {
-    adventure: [
-      { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
-      { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
-      { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
-    ],
-    fantasy: [
-      { id: 64, title: "Maleficent", image: maleficentMovie, rating: "7.0" },
-      { id: 65, title: "Beauty and the Beast", image: beautyBeastMovie, rating: "7.1" },
-    ],
-    family: [
-      { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
-      { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
     ],
   },
 };

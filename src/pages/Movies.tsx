@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
 import { Card } from "@/components/ui/card";
-import { Globe, Languages, Sparkles } from "lucide-react";
+import { Globe, Languages } from "lucide-react";
 
 const categories = [
   { id: "arabic", title: "Arabic", icon: Globe, color: "from-primary to-primary/60" },
   { id: "english", title: "English / Foreign", icon: Languages, color: "from-accent to-accent/60" },
   { id: "indian", title: "Indian", icon: Globe, color: "from-primary to-accent" },
-  { id: "disney", title: "Disney Movies", icon: Sparkles, color: "from-purple-500 to-pink-500" },
   { id: "russian", title: "Russian", icon: Languages, color: "from-accent to-primary" },
   { id: "turkish", title: "Turkish", icon: Globe, color: "from-primary to-secondary" },
   { id: "korean", title: "Korean", icon: Languages, color: "from-secondary to-accent" },
