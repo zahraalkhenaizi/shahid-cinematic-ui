@@ -54,7 +54,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
         cast: "Karim Abdel Aziz, Dina El Sherbiny, Maged El Kedwany, Bayoumi Fouad",
         videoUrl: "https://youtu.be/_jMsLvxCClo?si=3AtJ4NEJYlsX2nAS"
       },
-      { id: 23, title: "قهر من اللحظات الحديدة", image: qaharHadidaMovie, rating: "7.6" },
+      { id: 23, title: "فاصل من اللحظات اللذيذة", image: qaharHadidaMovie, rating: "7.6" },
       { id: 24, title: "الحرب العالمية الثالثة", image: worldWar3Movie, rating: "7.4" },
       { id: 25, title: "وقوع رباقة", image: woqoRabaqaMovie, rating: "7.5" },
       { id: 26, title: "باباحامل", image: babaHamilMovie, rating: "7.3" },
