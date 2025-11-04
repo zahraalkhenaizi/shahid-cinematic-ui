@@ -9,6 +9,7 @@ import casablancaSeries from "@/assets/casablanca-series.jpg";
 import raniaWaSakeenaSeries from "@/assets/rania-wa-sakeena-series.jpg";
 import ahlaSultanSeries from "@/assets/ahla-sultan-series.jpg";
 import azmiAshganSeries from "@/assets/azmi-ashgan-series.jpg";
+import salonZahraSeries from "@/assets/salon-zahra-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -43,6 +44,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 11, title: "Desert Warriors", image: "/placeholder.svg", rating: "8.0" },
     ],
     romance: [
+      { id: 12, title: "صالون زهرة", image: salonZahraSeries, rating: "8.4" },
       { id: 11, title: "وكأن يا ليلى", image: wkaanYaLaylaSeries, rating: "8.2" },
     ],
   },
