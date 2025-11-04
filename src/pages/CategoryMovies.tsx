@@ -146,8 +146,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     family: [
       { id: 83, title: "The Princess Diaries", image: princessDiariesMovie, rating: "6.4" },
       { id: 84, title: "The Parent Trap", image: parentTrapMovie, rating: "6.6" },
-      { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
-      { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
     ],
   },
   indian: {
