@@ -18,6 +18,7 @@ import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 import annabelleMovie from "@/assets/annabelle-movie.jpg";
 import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
+import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -170,6 +171,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "James Cameron",
     cast: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
     videoUrl: "https://youtu.be/5PSNL1qE6VY"
+  },
+  "62": {
+    id: 62,
+    title: "Alice in Wonderland",
+    image: aliceWonderlandMovie,
+    rating: "6.4",
+    year: "2010",
+    duration: "1h 48m",
+    genre: "Adventure / Family / Fantasy",
+    language: "English",
+    description: "Nineteen-year-old Alice returns to the magical world from her childhood adventure, where she reunites with her old friends and learns of her true destiny: to end the Red Queen's reign of terror. This visually stunning reimagining of Lewis Carroll's classic tale follows Alice as she falls down a rabbit hole into Wonderland, a place she visited as a child but doesn't remember. She must choose between following convention or embracing her destiny to save Wonderland from the tyrannical rule of the Red Queen.",
+    director: "Tim Burton",
+    writer: "Linda Woolverton",
+    cast: "Mia Wasikowska, Johnny Depp, Helena Bonham Carter, Anne Hathaway",
+    videoUrl: "https://youtu.be/9POCgSRVvf0"
   }
 };
 
