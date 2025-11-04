@@ -31,6 +31,8 @@ import restartMovie from "@/assets/restart-movie.jpg";
 import chicOneBabeMovie from "@/assets/chic-one-babe-movie.jpg";
 import movie122 from "@/assets/122-movie.jpg";
 import annabelleMovie from "@/assets/annabelle-movie.jpg";
+import titanicMovie from "@/assets/titanic-movie.jpg";
+import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -109,6 +111,8 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 22, title: "The Matrix", image: "/placeholder.svg", rating: "8.7" },
     ],
     drama: [
+      { id: 79, title: "Titanic", image: titanicMovie, rating: "7.9" },
+      { id: 80, title: "Me Before You", image: meBeforeYouMovie, rating: "7.4" },
       { id: 23, title: "The Shawshank Redemption", image: "/placeholder.svg", rating: "9.3" },
       { id: 24, title: "Forrest Gump", image: "/placeholder.svg", rating: "8.8" },
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
