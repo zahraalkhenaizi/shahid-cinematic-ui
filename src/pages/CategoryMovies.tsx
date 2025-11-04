@@ -16,6 +16,7 @@ import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
 import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
 import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
 import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
+import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
@@ -58,6 +59,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 25, title: "وقوع رباقة", image: woqoRabaqaMovie, rating: "7.5" },
       { id: 26, title: "باباحامل", image: babaHamilMovie, rating: "7.3" },
       { id: 27, title: "حلم القلب", image: helmAlqalbMovie, rating: "7.2" },
+      { id: 28, title: "وش و وش", image: weshWeshMovie, rating: "7.4" },
       { id: 2, title: "Zaki Chan", image: "/placeholder.svg", rating: "7.1" },
       { id: 3, title: "Al Ens Wa Al Nems", image: "/placeholder.svg", rating: "7.5" },
       { id: 4, title: "X Large", image: "/placeholder.svg", rating: "7.0" },
