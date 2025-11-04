@@ -21,8 +21,8 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     comedy: [
       { 
         id: 1, 
-        title: "Rizk", 
-        image: arabicComedyMovie, 
+        title: "البعض لا يذهب للمأذون مرتين", 
+        image: arabicComedyMovie,
         rating: "8.5",
         year: "2017",
         duration: "1h 55m",

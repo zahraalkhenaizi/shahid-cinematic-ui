@@ -13,7 +13,7 @@ import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 const moviesDatabase: Record<string, any> = {
   "1": {
     id: 1,
-    title: "Rizk",
+    title: "البعض لا يذهب للمأذون مرتين",
     image: arabicComedyMovie,
     rating: "8.5",
     year: "2017",
