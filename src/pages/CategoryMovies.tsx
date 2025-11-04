@@ -28,6 +28,7 @@ import asheqMovie from "@/assets/asheq-movie.jpg";
 import ayyamMovie from "@/assets/ayyam-movie.jpg";
 import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import restartMovie from "@/assets/restart-movie.jpg";
+import chicOneBabeMovie from "@/assets/chic-one-babe-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -92,6 +93,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 14, title: "بحبك", image: ghadarMovie, rating: "7.8" },
       { id: 15, title: "قصة حب", image: mantahabMovie, rating: "7.5" },
       { id: 18, title: "ريستارت", image: restartMovie, rating: "7.6" },
+      { id: 19, title: "شيك ون بيبيه", image: chicOneBabeMovie, rating: "7.4" },
       { id: 16, title: "A Day for Women", image: "/placeholder.svg", rating: "7.2" },
       { id: 17, title: "Asmaa", image: "/placeholder.svg", rating: "7.5" },
     ],
