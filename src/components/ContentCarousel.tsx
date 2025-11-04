@@ -13,9 +13,10 @@ interface Content {
 interface ContentCarouselProps {
   title: string;
   items: Content[];
+  type?: "movie" | "series";
 }
 
-const ContentCarousel = ({ title, items }: ContentCarouselProps) => {
+const ContentCarousel = ({ title, items, type = "movie" }: ContentCarouselProps) => {
   const [scrollPosition, setScrollPosition] = useState(0);
   const navigate = useNavigate();
 
@@ -61,7 +62,7 @@ const ContentCarousel = ({ title, items }: ContentCarouselProps) => {
           <div
             key={item.id}
             className="flex-shrink-0 w-48 cursor-pointer group"
-            onClick={() => navigate(`/movie/${item.id}`)}
+            onClick={() => navigate(type === "series" ? `/series/${item.id}` : `/movie/${item.id}`)}
           >
             <div className="relative overflow-hidden rounded-lg card-hover">
               <img

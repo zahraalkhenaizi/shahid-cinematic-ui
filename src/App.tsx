@@ -9,6 +9,7 @@ import CategoryMovies from "./pages/CategoryMovies";
 import MovieGenreList from "./pages/MovieGenreList";
 import MovieDetail from "./pages/MovieDetail";
 import Series from "./pages/Series";
+import SeriesDetail from "./pages/SeriesDetail";
 import CategorySeries from "./pages/CategorySeries";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/movie/:id" element={<MovieDetail />} />
           <Route path="/series" element={<Series />} />
           <Route path="/series/:categoryId" element={<CategorySeries />} />
+          <Route path="/series/:id" element={<SeriesDetail />} />
           <Route path="/profile" element={<Profile />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -147,6 +147,7 @@ const CategorySeries = () => {
             key={genreId}
             title={genreTitles[genreId] || genreId}
             items={series}
+            type="series"
           />
         ))}
       </main>
