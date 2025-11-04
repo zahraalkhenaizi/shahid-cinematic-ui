@@ -16,6 +16,7 @@ import highSchoolGirlsSeries from "@/assets/high-school-girls-series.jpg";
 import gunesinKizlariSeries from "@/assets/gunesin-kizlari-series.jpg";
 import kirginCiceklerSeries from "@/assets/kirgin-cicekler-series.jpg";
 import kiralikAskSeries from "@/assets/kiralik-ask-series.jpg";
+import issPyaarKoKyaNaamDoonSeries from "@/assets/iss-pyaar-ko-kya-naam-doon-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -72,6 +73,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   },
   indian: {
     drama: [
+      { id: 19, title: "Iss Pyaar Ko Kya Naam Doon?", image: issPyaarKoKyaNaamDoonSeries, rating: "8.1" },
       { id: 26, title: "Mumbai Diaries", image: "/placeholder.svg", rating: "8.6" },
       { id: 27, title: "Sacred Games", image: "/placeholder.svg", rating: "9.1" },
       { id: 28, title: "Delhi Crime", image: "/placeholder.svg", rating: "8.9" },
