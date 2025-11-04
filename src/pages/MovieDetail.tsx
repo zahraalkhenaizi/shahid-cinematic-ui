@@ -26,6 +26,7 @@ import elementalMovie from "@/assets/elemental-movie.jpg";
 import braveMovie from "@/assets/brave-movie.jpg";
 import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
+import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -298,6 +299,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "David Swift, Nancy Meyers, Charles Shyer",
     cast: "Lindsay Lohan, Dennis Quaid, Natasha Richardson, Elaine Hendrix",
     videoUrl: "https://youtu.be/CQv-MTSoe-k"
+  },
+  "23": {
+    id: 23,
+    title: "فاصل من اللحظات اللذيذة",
+    image: qaharHadidaMovie,
+    rating: "7.6",
+    year: "2019",
+    duration: "1h 45m",
+    genre: "Comedy / Drama",
+    language: "Arabic (Egyptian)",
+    description: "A refreshing comedy-drama that follows the intertwining lives of several characters during unexpected encounters. The film explores the beauty found in life's simple moments and the connections we make with strangers. Through a series of delightful vignettes, it examines how brief interactions can leave lasting impressions and change our perspectives. With its warm humor and relatable characters, the movie celebrates the small joys that make life worth living.",
+    director: "Mohamed Shaker Khodeir",
+    writer: "Mohamed Shaker Khodeir",
+    cast: "Hani Adel, Salwa Mohamed Ali, Nahed El Sebai, Arwa Gouda",
+    videoUrl: "https://youtu.be/example"
   }
 };
 
