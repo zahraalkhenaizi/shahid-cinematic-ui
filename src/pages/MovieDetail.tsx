@@ -12,6 +12,7 @@ import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 import titanicMovie from "@/assets/titanic-movie.jpg";
 import twilightMovie from "@/assets/twilight-movie.jpg";
 import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
+import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -74,6 +75,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Jojo Moyes",
     cast: "Emilia Clarke, Sam Claflin, Janet McTeer, Charles Dance",
     videoUrl: "https://youtu.be/Eh993__rOxA"
+  },
+  "81": {
+    id: 81,
+    title: "How to Lose a Guy in 10 Days",
+    image: howToLoseAGuyMovie,
+    rating: "6.4",
+    year: "2003",
+    duration: "1h 56m",
+    genre: "Comedy / Romance",
+    language: "English",
+    description: "Andie Anderson is a magazine writer who writes the 'How To' column. She's assigned to write an article about 'How to Lose a Guy in 10 Days.' Meanwhile, advertising executive Benjamin Barry makes a bet with his boss that he can make any woman fall in love with him in 10 days. When Andie and Ben meet, their goals clash, leading to hilarious misunderstandings and unexpected romantic complications. As the deadline approaches, both begin to realize they may be falling for each other despite their schemes.",
+    director: "Donald Petrie",
+    writer: "Kristen Buckley, Brian Regan",
+    cast: "Kate Hudson, Matthew McConaughey, Kathryn Hahn, Michael Michele",
+    videoUrl: "https://youtu.be/QpxNJv7CTCI"
   }
 };
 
