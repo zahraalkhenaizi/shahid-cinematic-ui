@@ -4,6 +4,7 @@ import ContentCarousel from "@/components/ContentCarousel";
 import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import wkaanYaLaylaSeries from "@/assets/wkaan-ya-layla-movie.jpg";
+import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -24,9 +25,10 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 5, title: "The Nile", image: "/placeholder.svg", rating: "8.3" },
     ],
     comedy: [
-      { id: 6, title: "Laugh Nights", image: "/placeholder.svg", rating: "7.8" },
-      { id: 7, title: "Cairo Comedy", image: "/placeholder.svg", rating: "8.1" },
-      { id: 8, title: "Family Laughs", image: "/placeholder.svg", rating: "7.5" },
+      { id: 6, title: "جت سليمة", image: jetSalimaSeries, rating: "8.2" },
+      { id: 7, title: "Laugh Nights", image: "/placeholder.svg", rating: "7.8" },
+      { id: 8, title: "Cairo Comedy", image: "/placeholder.svg", rating: "8.1" },
+      { id: 9, title: "Family Laughs", image: "/placeholder.svg", rating: "7.5" },
     ],
     action: [
       { id: 9, title: "The Chase", image: "/placeholder.svg", rating: "8.4" },
