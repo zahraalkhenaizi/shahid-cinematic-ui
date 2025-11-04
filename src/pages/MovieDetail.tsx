@@ -30,6 +30,7 @@ import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
 import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
 import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
 import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
+import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -361,6 +362,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Ali Idris",
     writer: "Karim Hassan Bashir",
     cast: "Mohamed Sallam, Mai Omar, Hamdy Al Merghany, Sahar Al Sayegh",
+    videoUrl: "https://youtu.be/example"
+  },
+  "27": {
+    id: 27,
+    title: "حامل اللقب",
+    image: helmAlqalbMovie,
+    rating: "7.2",
+    year: "2015",
+    duration: "1h 35m",
+    genre: "Comedy / Sport",
+    language: "Arabic (Egyptian)",
+    description: "An entertaining sports comedy that follows a down-on-his-luck boxer who unexpectedly gets a shot at the championship title. Despite his lack of recent training and questionable lifestyle choices, he must transform himself from a has-been into a true champion. With the help of an unlikely team and his own determination, he embarks on a journey of redemption and self-discovery. The film combines sports action with laugh-out-loud comedy while exploring themes of second chances and never giving up on your dreams.",
+    director: "Ismail Farouk",
+    writer: "Karim Hassan Bashir",
+    cast: "Mohamed Imam, Yasmin Sabry, Hassan Hosny, Bayoumi Fouad",
     videoUrl: "https://youtu.be/example"
   }
 };
