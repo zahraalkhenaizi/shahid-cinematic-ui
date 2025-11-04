@@ -37,6 +37,7 @@ import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 import twilightMovie from "@/assets/twilight-movie.jpg";
 import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
+import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -135,6 +136,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 77, title: "Insidious", image: "/placeholder.svg", rating: "6.8" },
     ],
     disney: [
+      { id: 85, title: "Corpse Bride", image: corpseBrideMovie, rating: "7.3" },
       { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
       { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
       { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
