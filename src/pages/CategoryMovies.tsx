@@ -77,7 +77,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     action: [
       { id: 11, title: "122", image: "/placeholder.svg", rating: "7.8" },
       { id: 21, title: "الخلية", image: elKhaleyaMovie, rating: "7.5" },
-      { id: 22, title: "عمومم", image: omommmMovie, rating: "7.3" },
+      { id: 22, title: "عمهم", image: omommmMovie, rating: "7.3" },
       { id: 12, title: "The Treasure", image: "/placeholder.svg", rating: "7.3" },
       { id: 13, title: "Clash of the Titans", image: "/placeholder.svg", rating: "7.0" },
     ],
