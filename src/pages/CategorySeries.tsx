@@ -55,7 +55,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     ],
     romance: [
       { id: 12, title: "صالون زهرة", image: salonZahraSeries, rating: "8.4" },
-      { id: 11, title: "وكأن يا ليلى", image: wkaanYaLaylaSeries, rating: "8.2" },
+      { id: 11, title: "ونحب تاني ليه", image: wkaanYaLaylaSeries, rating: "8.2" },
     ],
   },
   foreign: {
