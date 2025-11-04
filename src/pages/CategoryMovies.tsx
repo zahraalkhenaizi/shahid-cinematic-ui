@@ -94,10 +94,6 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 30, title: "Se7en", image: "/placeholder.svg", rating: "8.6" },
       { id: 31, title: "Gone Girl", image: "/placeholder.svg", rating: "8.1" },
     ],
-    comedy: [
-      { id: 32, title: "The Grand Budapest Hotel", image: "/placeholder.svg", rating: "8.1" },
-      { id: 33, title: "Superbad", image: "/placeholder.svg", rating: "7.6" },
-    ],
     disney: [
       { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
       { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
