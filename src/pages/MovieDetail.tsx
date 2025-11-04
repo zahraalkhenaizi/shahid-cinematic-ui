@@ -19,6 +19,7 @@ import annabelleMovie from "@/assets/annabelle-movie.jpg";
 import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
+import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -186,6 +187,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Linda Woolverton",
     cast: "Mia Wasikowska, Johnny Depp, Helena Bonham Carter, Anne Hathaway",
     videoUrl: "https://youtu.be/9POCgSRVvf0"
+  },
+  "63": {
+    id: 63,
+    title: "How to Train Your Dragon",
+    image: howToTrainDragonMovie,
+    rating: "8.1",
+    year: "2010",
+    duration: "1h 38m",
+    genre: "Animation / Action / Adventure",
+    language: "English",
+    description: "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed. Hiccup, a Viking teenager, lives on the island of Berk, where fighting dragons is a way of life. His progressive views and weird sense of humor make him a misfit, despite being the chief's son. When he shoots down a mysterious Night Fury dragon, he discovers that dragons may not be the mindless beasts everyone believes them to be. This heartwarming tale explores themes of friendship, acceptance, and challenging tradition.",
+    director: "Dean DeBlois, Chris Sanders",
+    writer: "Dean DeBlois, Chris Sanders",
+    cast: "Jay Baruchel, Gerard Butler, America Ferrera, Craig Ferguson",
+    videoUrl: "https://youtu.be/oKiYuIsPxYk"
   }
 };
 
