@@ -33,6 +33,7 @@ import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
 import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
 import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
 import asheqMovie from "@/assets/asheq-movie.jpg";
+import ayyamMovie from "@/assets/ayyam-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -409,6 +410,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Magdy Ahmed Ali",
     writer: "Magdy Ahmed Ali",
     cast: "Hani Salama, Hanan Turk, Khaled Abol Naga, Mona Zaki",
+    videoUrl: "https://youtu.be/example"
+  },
+  "69": {
+    id: 69,
+    title: "أيام",
+    image: ayyamMovie,
+    rating: "8.1",
+    year: "2010",
+    duration: "2h 10m",
+    genre: "Drama / Family",
+    language: "Arabic (Egyptian)",
+    description: "A deeply moving family drama that explores the passage of time and the bonds that hold families together through life's trials. Following multiple generations of an Egyptian family, the film chronicles their joys, sorrows, conflicts, and reconciliations across different eras. Through everyday moments and life-changing events, it captures the essence of what it means to belong to a family. A poignant reflection on memory, legacy, and the cycles of life that beautifully portrays the complexity of family relationships and the enduring strength of love.",
+    director: "Hani Khalifa",
+    writer: "Marwan Hamed",
+    cast: "Khaled Abol Naga, Mona Zaki, Ahmed Helmy, Amr Waked",
     videoUrl: "https://youtu.be/example"
   }
 };
