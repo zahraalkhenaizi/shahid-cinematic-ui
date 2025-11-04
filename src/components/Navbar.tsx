@@ -29,9 +29,6 @@ const Navbar = () => {
             <Link to="/series" className="text-sm font-medium hover:text-primary transition-colors">
               Series
             </Link>
-            <Link to="/categories" className="text-sm font-medium hover:text-primary transition-colors">
-              Categories
-            </Link>
             <Link to="/my-list" className="text-sm font-medium hover:text-primary transition-colors">
               My List
             </Link>
