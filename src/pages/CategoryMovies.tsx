@@ -68,7 +68,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     drama: [
       { id: 6, title: "The Blue Elephant", image: "/placeholder.svg", rating: "8.5" },
       { id: 7, title: "Al-Haram", image: "/placeholder.svg", rating: "8.9" },
-      { id: 19, title: "فيلا 69", image: villa69Movie, rating: "7.2" },
+      { id: 19, title: "فيها ايه يعني ؟", image: villa69Movie, rating: "7.2" },
       { id: 20, title: "مين يصدق", image: minYesaddaqMovie, rating: "7.8" },
       { id: 8, title: "Microphone", image: "/placeholder.svg", rating: "7.5" },
       { id: 9, title: "Clash", image: "/placeholder.svg", rating: "7.4" },
