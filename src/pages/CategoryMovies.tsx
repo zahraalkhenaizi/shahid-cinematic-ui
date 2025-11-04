@@ -24,6 +24,8 @@ import maleficentMovie from "@/assets/maleficent-movie.jpg";
 import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
 import elementalMovie from "@/assets/elemental-movie.jpg";
 import braveMovie from "@/assets/brave-movie.jpg";
+import asheqMovie from "@/assets/asheq-movie.jpg";
+import ayyamMovie from "@/assets/ayyam-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -66,6 +68,8 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 5, title: "Nems Bond", image: "/placeholder.svg", rating: "6.8" },
     ],
     drama: [
+      { id: 68, title: "عاشق", image: asheqMovie, rating: "8.1" },
+      { id: 69, title: "أيام", image: ayyamMovie, rating: "8.1" },
       { id: 6, title: "The Blue Elephant", image: "/placeholder.svg", rating: "8.5" },
       { id: 7, title: "Al-Haram", image: "/placeholder.svg", rating: "8.9" },
       { id: 19, title: "فيها ايه يعني ؟", image: villa69Movie, rating: "7.2" },
