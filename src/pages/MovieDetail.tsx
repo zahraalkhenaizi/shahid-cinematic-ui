@@ -16,6 +16,7 @@ import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 import annabelleMovie from "@/assets/annabelle-movie.jpg";
+import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -138,6 +139,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Gary Dauberman",
     cast: "Mckenna Grace, Madison Iseman, Katie Sarife, Patrick Wilson, Vera Farmiga",
     videoUrl: "https://youtu.be/R5oXZbiYGl4"
+  },
+  "85": {
+    id: 85,
+    title: "Corpse Bride",
+    image: corpseBrideMovie,
+    rating: "7.3",
+    year: "2005",
+    duration: "1h 17m",
+    genre: "Animation / Fantasy",
+    language: "English",
+    description: "Set in a 19th-century European village, this stop-motion animated film follows Victor, a young man who is whisked away to the underworld and wed to a mysterious Corpse Bride, while his real bride Victoria waits bereft in the land of the living. Though life in the Land of the Dead proves to be a lot more colorful than his strict Victorian upbringing, Victor learns that there is nothing in this world, or the next, that can keep him away from his one true love. A visually stunning tale of love, loss, and letting go.",
+    director: "Tim Burton, Mike Johnson",
+    writer: "John August, Caroline Thompson, Pamela Pettler",
+    cast: "Johnny Depp, Helena Bonham Carter, Emily Watson, Tracey Ullman",
+    videoUrl: "https://youtu.be/AGACeWVdFqo"
   }
 };
 
