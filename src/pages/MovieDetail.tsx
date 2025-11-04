@@ -16,12 +16,14 @@ const moviesDatabase: Record<string, any> = {
     title: "البعض لا يذهب للمأذون مرتين",
     image: arabicComedyMovie,
     rating: "8.5",
-    year: "2017",
-    duration: "1h 55m",
-    genre: "Comedy, Crime",
-    description: "A gripping tale of four friends who turn to a life of crime, navigating through hilarious and dangerous situations in the heart of Cairo. What starts as a desperate attempt to make quick money turns into a series of events that test their friendship and survival instincts.",
-    director: "Tarek El Eryan",
-    cast: "Ahmed Ezz, Asser Yassin, Ahmed Dawood",
+    year: "2021",
+    duration: "1h 40m",
+    genre: "Comedy / Social",
+    language: "Arabic (Egyptian)",
+    description: "The film follows Khaled, a well-known media presenter, and his wife Thuraya, a marriage expert. Although they appear like the perfect couple, hidden conflicts arise between them. A sudden system glitch leads to the cancellation of all registered marriage certificates in Egypt—giving couples the chance to 're-choose' their partners. The film humorously explores the question: If you could choose your partner again, would you choose the same person?",
+    director: "Ahmed El Gendy",
+    writer: "Ayman Wattar",
+    cast: "Karim Abdel Aziz, Dina El Sherbiny, Maged El Kedwany, Bayoumi Fouad",
     videoUrl: "https://youtu.be/_jMsLvxCClo?si=3AtJ4NEJYlsX2nAS"
   }
 };
@@ -132,6 +134,14 @@ const MovieDetail = () => {
                 <div>
                   <h4 className="font-semibold mb-1">Director</h4>
                   <p className="text-muted-foreground">{movie.director}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Writer</h4>
+                  <p className="text-muted-foreground">{movie.writer}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Language</h4>
+                  <p className="text-muted-foreground">{movie.language}</p>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Cast</h4>
