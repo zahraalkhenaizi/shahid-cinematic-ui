@@ -2,7 +2,7 @@ import { Play, Plus, Share2, ChevronLeft, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import ContentCarousel from "@/components/ContentCarousel";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState } from "react";
 import wkaanYaLaylaSeries from "@/assets/wkaan-ya-layla-movie.jpg";
 import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
@@ -87,12 +87,15 @@ const SeriesDetail = () => {
       {/* Series Info Section */}
       <section className="relative -mt-32 z-10">
         <div className="container mx-auto px-4 py-8">
-          <Link to="/series/arabic">
-            <Button variant="ghost" size="sm" className="mb-4">
-              <ChevronLeft className="h-4 w-4 mr-1" />
-              Back to Series
-            </Button>
-          </Link>
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            className="mb-4"
+            onClick={() => window.history.back()}
+          >
+            <ChevronLeft className="h-4 w-4 mr-1" />
+            Back to Series
+          </Button>
 
           <div className="grid md:grid-cols-[300px,1fr] gap-8 animate-fade-in">
             {/* Series Poster */}

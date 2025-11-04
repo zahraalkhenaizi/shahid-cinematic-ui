@@ -2,13 +2,14 @@ import { Play, Plus, Share2, ChevronLeft, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Navbar from "@/components/Navbar";
 import ContentCarousel from "@/components/ContentCarousel";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState } from "react";
 import movie1 from "@/assets/movie-1.jpg";
 import movie2 from "@/assets/movie-2.jpg";
 import movie3 from "@/assets/movie-3.jpg";
 import movie4 from "@/assets/movie-4.jpg";
 import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
+import titanicMovie from "@/assets/titanic-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -26,6 +27,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Ayman Wattar",
     cast: "Karim Abdel Aziz, Dina El Sherbiny, Maged El Kedwany, Bayoumi Fouad",
     videoUrl: "https://youtu.be/_jMsLvxCClo?si=3AtJ4NEJYlsX2nAS"
+  },
+  "79": {
+    id: 79,
+    title: "Titanic",
+    image: titanicMovie,
+    rating: "7.9",
+    year: "1997",
+    duration: "3h 14m",
+    genre: "Drama / Romance",
+    language: "English",
+    description: "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic. On April 10, 1912, the Titanic embarked on its maiden voyage from Southampton to New York City. Among the passengers are Rose DeWitt Bukater and her fiancé Caledon Hockley, and Jack Dawson, a poor artist who won his ticket in a poker game. Rose and Jack fall in love despite their different social classes, but their romance is cut short when the ship strikes an iceberg and begins to sink.",
+    director: "James Cameron",
+    writer: "James Cameron",
+    cast: "Leonardo DiCaprio, Kate Winslet, Billy Zane, Kathy Bates",
+    videoUrl: "https://youtu.be/CHekzSiZjrY"
   }
 };
 
@@ -89,12 +105,15 @@ const MovieDetail = () => {
       {/* Movie Info Section */}
       <section className="relative -mt-32 z-10">
         <div className="container mx-auto px-4 py-8">
-          <Link to="/movies/arabic">
-            <Button variant="ghost" size="sm" className="mb-4">
-              <ChevronLeft className="h-4 w-4 mr-1" />
-              Back to Movies
-            </Button>
-          </Link>
+          <Button 
+            variant="ghost" 
+            size="sm" 
+            className="mb-4"
+            onClick={() => window.history.back()}
+          >
+            <ChevronLeft className="h-4 w-4 mr-1" />
+            Back to Movies
+          </Button>
 
           <div className="grid md:grid-cols-[300px,1fr] gap-8 animate-fade-in">
             {/* Movie Poster */}
