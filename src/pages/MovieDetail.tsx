@@ -38,6 +38,7 @@ import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import villa69Movie from "@/assets/villa-69-movie.jpg";
 import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
 import movie122 from "@/assets/122-movie.jpg";
+import elKhaleyaMovie from "@/assets/el-khaleya-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -489,6 +490,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Yasir Al Yasiri",
     writer: "Hosam Mubarak",
     cast: "Amr Youssef, Afaf Shoieb, Ahmed Dash, Mohamed Mamdouh",
+    videoUrl: "https://youtu.be/example"
+  },
+  "21": {
+    id: 21,
+    title: "الخلية",
+    image: elKhaleyaMovie,
+    rating: "7.5",
+    year: "2017",
+    duration: "1h 50m",
+    genre: "Action / Thriller",
+    language: "Arabic (Egyptian)",
+    description: "A gripping action thriller about a counter-terrorism unit that must infiltrate and dismantle a dangerous terrorist cell planning a major attack. As the clock ticks down, the team faces impossible choices and moral dilemmas. The film delivers intense action sequences while exploring the psychological toll of fighting terrorism and the sacrifices made by those who protect their country. A tense, edge-of-your-seat thriller that examines the complexities of national security and the human cost of the war on terror.",
+    director: "Tamer Mohsen",
+    writer: "Baher Dewidar",
+    cast: "Ahmed Ezz, Ahmed El Fishawy, Ahmed Dawood, Arwa Gouda",
     videoUrl: "https://youtu.be/example"
   }
 };
