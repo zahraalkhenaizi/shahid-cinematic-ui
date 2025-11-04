@@ -34,6 +34,7 @@ import annabelleMovie from "@/assets/annabelle-movie.jpg";
 import titanicMovie from "@/assets/titanic-movie.jpg";
 import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
+import twilightMovie from "@/assets/twilight-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -105,6 +106,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   },
   english: {
     action: [
+      { id: 82, title: "Twilight", image: twilightMovie, rating: "5.3" },
       { id: 18, title: "The Dark Knight", image: "/placeholder.svg", rating: "9.0" },
       { id: 19, title: "Inception", image: "/placeholder.svg", rating: "8.8" },
       { id: 20, title: "Mad Max: Fury Road", image: "/placeholder.svg", rating: "8.1" },
