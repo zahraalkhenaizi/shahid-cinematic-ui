@@ -22,6 +22,7 @@ import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
 import maleficentMovie from "@/assets/maleficent-movie.jpg";
 import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
+import elementalMovie from "@/assets/elemental-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -234,6 +235,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Stephen Chbosky, Evan Spiliotopoulos",
     cast: "Emma Watson, Dan Stevens, Luke Evans, Josh Gad",
     videoUrl: "https://youtu.be/OvW_L8sTu5E"
+  },
+  "66": {
+    id: 66,
+    title: "Elemental",
+    image: elementalMovie,
+    rating: "7.0",
+    year: "2023",
+    duration: "1h 41m",
+    genre: "Animation / Adventure / Comedy",
+    language: "English",
+    description: "In a city where fire, water, land, and air residents live together, a fiery young woman and a go-with-the-flow guy discover something elemental: how much they actually have in common. Ember, a tough and quick-witted fire element, has spent her whole life in Firetown, never venturing into the diverse Element City that her immigrant parents always warned her about. But when she meets Wade, a fun and sappy water element, they discover that despite their opposite natures, they share core values. As their friendship grows into something more, they must navigate the challenges of a relationship between elements that aren't supposed to mix.",
+    director: "Peter Sohn",
+    writer: "John Hoberg, Kat Likkel, Brenda Hsueh",
+    cast: "Leah Lewis, Mamoudou Athie, Ronnie del Carmen, Shila Ommi",
+    videoUrl: "https://youtu.be/hXzcyx9V0xw"
   }
 };
 
