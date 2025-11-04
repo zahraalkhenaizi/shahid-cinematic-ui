@@ -35,6 +35,8 @@ import titanicMovie from "@/assets/titanic-movie.jpg";
 import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 import twilightMovie from "@/assets/twilight-movie.jpg";
+import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
+import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -142,6 +144,8 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
     ],
     family: [
+      { id: 83, title: "The Princess Diaries", image: princessDiariesMovie, rating: "6.4" },
+      { id: 84, title: "The Parent Trap", image: parentTrapMovie, rating: "6.6" },
       { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
       { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
     ],
