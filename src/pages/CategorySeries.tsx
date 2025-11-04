@@ -15,7 +15,7 @@ import streetSorrowSeries from "@/assets/street-sorrow-series.jpg";
 import highSchoolGirlsSeries from "@/assets/high-school-girls-series.jpg";
 import gunesinKizlariSeries from "@/assets/gunesin-kizlari-series.jpg";
 import kirginCiceklerSeries from "@/assets/kirgin-cicekler-series.jpg";
-import askSeries from "@/assets/ask-series.jpg";
+import kiralikAskSeries from "@/assets/kiralik-ask-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -92,7 +92,7 @@ const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 37, title: "Bosphorus Nights", image: "/placeholder.svg", rating: "8.5" },
     ],
     romance: [
-      { id: 18, title: "Kiralık Aşk", image: askSeries, rating: "7.6" },
+      { id: 18, title: "Kiralık Aşk", image: kiralikAskSeries, rating: "7.6" },
       { id: 38, title: "Endless Love", image: "/placeholder.svg", rating: "7.6" },
       { id: 39, title: "Ask Laftan Anlamaz", image: "/placeholder.svg", rating: "8.0" },
     ],

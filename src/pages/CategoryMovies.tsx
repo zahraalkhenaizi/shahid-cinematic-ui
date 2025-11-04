@@ -48,6 +48,7 @@ import dilwaleMovie from "@/assets/dilwale-movie.jpg";
 import bajrangiBhaijaanMovie from "@/assets/bajrangi-bhaijaan-movie.jpg";
 import mujhseDostiKarogeMovie from "@/assets/mujhse-dosti-karoge-movie.jpg";
 import kabhiKhushiKabhieGhamMovie from "@/assets/kabhi-khushi-kabhie-gham-movie.jpg";
+import kogustakiMucizeMovie from "@/assets/7-kogustaki-mucize-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -219,6 +220,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   },
   turkish: {
     drama: [
+      { id: 104, title: "7. Koğuştaki Mucize", image: kogustakiMucizeMovie, rating: "8.2" },
       { id: 55, title: "Winter Sleep", image: "/placeholder.svg", rating: "8.1" },
       { id: 56, title: "Once Upon a Time in Anatolia", image: "/placeholder.svg", rating: "7.8" },
     ],
