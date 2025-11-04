@@ -27,6 +27,7 @@ import braveMovie from "@/assets/brave-movie.jpg";
 import princessDiariesMovie from "@/assets/princess-diaries-movie.jpg";
 import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
+import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -313,6 +314,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Mohamed Shaker Khodeir",
     writer: "Mohamed Shaker Khodeir",
     cast: "Hani Adel, Salwa Mohamed Ali, Nahed El Sebai, Arwa Gouda",
+    videoUrl: "https://youtu.be/example"
+  },
+  "24": {
+    id: 24,
+    title: "الحرب العالمية الثالثة",
+    image: worldWar3Movie,
+    rating: "7.4",
+    year: "2014",
+    duration: "1h 45m",
+    genre: "Comedy / Action",
+    language: "Arabic (Egyptian)",
+    description: "A hilarious action-comedy that follows Khamis, a simple man who accidentally gets caught up in international espionage. When he's mistaken for a dangerous spy, he finds himself in the middle of a conspiracy that could spark World War III. With no training and only his street smarts, Khamis must navigate a world of secret agents, double-crossers, and international intrigue. This fast-paced comedy delivers non-stop laughs while satirizing spy thrillers and global politics.",
+    director: "Ahmed El Gendy",
+    writer: "Ahmed Abdallah, Mohamed Nayer",
+    cast: "Ahmad Helmy, Ghada Adel, Khaled El Sawy, Donia Samir Ghanem",
     videoUrl: "https://youtu.be/example"
   }
 };
