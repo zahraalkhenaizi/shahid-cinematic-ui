@@ -13,6 +13,7 @@ import titanicMovie from "@/assets/titanic-movie.jpg";
 import twilightMovie from "@/assets/twilight-movie.jpg";
 import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
+import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -90,6 +91,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Kristen Buckley, Brian Regan",
     cast: "Kate Hudson, Matthew McConaughey, Kathryn Hahn, Michael Michele",
     videoUrl: "https://youtu.be/QpxNJv7CTCI"
+  },
+  "86": {
+    id: 86,
+    title: "The Devil Wears Prada",
+    image: devilWearsPradaMovie,
+    rating: "6.9",
+    year: "2006",
+    duration: "1h 49m",
+    genre: "Comedy / Drama",
+    language: "English",
+    description: "Andrea 'Andy' Sachs, a recent college graduate with dreams of becoming a journalist, lands a job as an assistant to Miranda Priestly, the demanding and ruthless editor-in-chief of Runway fashion magazine. Despite knowing nothing about fashion, Andy takes the job hoping it will open doors in the publishing industry. She soon finds herself struggling to meet Miranda's impossible demands while trying to maintain her relationships and personal values. As Andy becomes more successful in the fashion world, she must decide what kind of person she wants to be.",
+    director: "David Frankel",
+    writer: "Aline Brosh McKenna",
+    cast: "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
+    videoUrl: "https://youtu.be/LyZDhg7V3Bo"
   }
 };
 
