@@ -1,59 +1,22 @@
 import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Star, ChevronLeft } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import { ChevronLeft, Laugh, Drama, Heart, Ghost, Zap, AlertTriangle, Map, Users, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-// Mock data - in a real app, this would come from an API
-const moviesByCategory: Record<string, any[]> = {
-  arabic: [
-    { id: 1, title: "The Blue Elephant", rating: 8.5, year: 2014, image: "/placeholder.svg" },
-    { id: 2, title: "122", rating: 7.8, year: 2019, image: "/placeholder.svg" },
-    { id: 3, title: "Rizk", rating: 8.2, year: 2016, image: "/placeholder.svg" },
-    { id: 4, title: "Al-Haram", rating: 8.9, year: 1965, image: "/placeholder.svg" },
-    { id: 5, title: "Microphone", rating: 7.5, year: 2010, image: "/placeholder.svg" },
-    { id: 6, title: "The Treasure", rating: 7.3, year: 2017, image: "/placeholder.svg" },
-  ],
-  english: [
-    { id: 7, title: "Inception", rating: 8.8, year: 2010, image: "/placeholder.svg" },
-    { id: 8, title: "The Dark Knight", rating: 9.0, year: 2008, image: "/placeholder.svg" },
-    { id: 9, title: "Interstellar", rating: 8.7, year: 2014, image: "/placeholder.svg" },
-    { id: 10, title: "Parasite", rating: 8.6, year: 2019, image: "/placeholder.svg" },
-    { id: 11, title: "The Shawshank Redemption", rating: 9.3, year: 1994, image: "/placeholder.svg" },
-    { id: 12, title: "Forrest Gump", rating: 8.8, year: 1994, image: "/placeholder.svg" },
-  ],
-  indian: [
-    { id: 13, title: "3 Idiots", rating: 8.4, year: 2009, image: "/placeholder.svg" },
-    { id: 14, title: "Dangal", rating: 8.3, year: 2016, image: "/placeholder.svg" },
-    { id: 15, title: "PK", rating: 8.1, year: 2014, image: "/placeholder.svg" },
-    { id: 16, title: "Lagaan", rating: 8.1, year: 2001, image: "/placeholder.svg" },
-  ],
-  russian: [
-    { id: 17, title: "Leviathan", rating: 7.6, year: 2014, image: "/placeholder.svg" },
-    { id: 18, title: "Loveless", rating: 7.6, year: 2017, image: "/placeholder.svg" },
-    { id: 19, title: "The Return", rating: 8.0, year: 2003, image: "/placeholder.svg" },
-  ],
-  turkish: [
-    { id: 20, title: "Miracle in Cell No. 7", rating: 8.2, year: 2019, image: "/placeholder.svg" },
-    { id: 21, title: "Winter Sleep", rating: 8.1, year: 2014, image: "/placeholder.svg" },
-    { id: 22, title: "Once Upon a Time in Anatolia", rating: 7.8, year: 2011, image: "/placeholder.svg" },
-  ],
-  korean: [
-    { id: 23, title: "Parasite", rating: 8.6, year: 2019, image: "/placeholder.svg" },
-    { id: 24, title: "Oldboy", rating: 8.4, year: 2003, image: "/placeholder.svg" },
-    { id: 25, title: "Memories of Murder", rating: 8.1, year: 2003, image: "/placeholder.svg" },
-    { id: 26, title: "Train to Busan", rating: 7.6, year: 2016, image: "/placeholder.svg" },
-  ],
-  japanese: [
-    { id: 27, title: "Spirited Away", rating: 8.6, year: 2001, image: "/placeholder.svg" },
-    { id: 28, title: "Seven Samurai", rating: 8.6, year: 1954, image: "/placeholder.svg" },
-    { id: 29, title: "Your Name", rating: 8.4, year: 2016, image: "/placeholder.svg" },
-    { id: 30, title: "Shoplifters", rating: 7.9, year: 2018, image: "/placeholder.svg" },
-  ],
-};
+const genres = [
+  { id: "comedy", title: "Comedy", icon: Laugh, color: "from-accent to-accent/60" },
+  { id: "drama", title: "Drama", icon: Drama, color: "from-primary to-primary/60" },
+  { id: "romance", title: "Romance", icon: Heart, color: "from-accent to-secondary" },
+  { id: "horror", title: "Horror", icon: Ghost, color: "from-destructive to-primary" },
+  { id: "action", title: "Action", icon: Zap, color: "from-primary to-accent" },
+  { id: "thriller", title: "Thriller", icon: AlertTriangle, color: "from-secondary to-accent" },
+  { id: "adventure", title: "Adventure", icon: Map, color: "from-primary to-secondary" },
+  { id: "family", title: "Family", icon: Users, color: "from-accent to-primary" },
+  { id: "scifi", title: "Sci-Fi", icon: Rocket, color: "from-primary to-destructive" },
+];
 
-const categoryTitles: Record<string, string> = {
+const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
   english: "English / Foreign Movies",
   indian: "Indian Movies",
@@ -65,8 +28,7 @@ const categoryTitles: Record<string, string> = {
 
 const CategoryMovies = () => {
   const { categoryId } = useParams<{ categoryId: string }>();
-  const movies = moviesByCategory[categoryId || ""] || [];
-  const categoryTitle = categoryTitles[categoryId || ""] || "Movies";
+  const languageTitle = languageTitles[categoryId || ""] || "Movies";
 
   return (
     <div className="min-h-screen bg-background">
@@ -77,40 +39,30 @@ const CategoryMovies = () => {
           <Link to="/movies">
             <Button variant="ghost" size="sm" className="mb-4">
               <ChevronLeft className="h-4 w-4 mr-1" />
-              Back to Categories
+              Back to Languages
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold mb-2 text-shadow">{categoryTitle}</h1>
-          <p className="text-muted-foreground">{movies.length} movies available</p>
+          <h1 className="text-4xl font-bold mb-2 text-shadow">{languageTitle}</h1>
+          <p className="text-muted-foreground">Select a genre to explore</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
-          {movies.map((movie) => (
-            <Link key={movie.id} to={`/movie/${movie.id}`}>
-              <Card className="overflow-hidden border-border bg-card/50 backdrop-blur-sm card-hover cursor-pointer group">
-                <div className="relative aspect-[2/3] overflow-hidden bg-muted">
-                  <img
-                    src={movie.image}
-                    alt={movie.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-semibold mb-2 line-clamp-1">{movie.title}</h3>
-                  <div className="flex items-center justify-between text-sm">
-                    <Badge variant="secondary" className="text-xs">
-                      {movie.year}
-                    </Badge>
-                    <div className="flex items-center gap-1 text-accent">
-                      <Star className="h-3 w-3 fill-accent" />
-                      <span className="font-medium">{movie.rating}</span>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {genres.map((genre) => {
+            const Icon = genre.icon;
+            return (
+              <Link key={genre.id} to={`/movies/${categoryId}/${genre.id}`}>
+                <Card className="relative overflow-hidden h-48 border-border bg-card/50 backdrop-blur-sm card-hover cursor-pointer group">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${genre.color} opacity-10 group-hover:opacity-20 transition-opacity`} />
+                  <div className="relative h-full flex flex-col items-center justify-center p-6 text-center">
+                    <div className="mb-4 p-4 rounded-full bg-card/80 backdrop-blur-sm group-hover:scale-110 transition-transform">
+                      <Icon className="h-8 w-8 text-primary" />
                     </div>
+                    <h3 className="text-xl font-bold">{genre.title}</h3>
                   </div>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
+                </Card>
+              </Link>
+            );
+          })}
         </div>
       </main>
     </div>
