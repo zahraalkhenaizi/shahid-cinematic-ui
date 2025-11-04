@@ -17,6 +17,7 @@ import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 import annabelleMovie from "@/assets/annabelle-movie.jpg";
 import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
+import avatarMovie from "@/assets/avatar-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -154,6 +155,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "John August, Caroline Thompson, Pamela Pettler",
     cast: "Johnny Depp, Helena Bonham Carter, Emily Watson, Tracey Ullman",
     videoUrl: "https://youtu.be/AGACeWVdFqo"
+  },
+  "61": {
+    id: 61,
+    title: "Avatar",
+    image: avatarMovie,
+    rating: "7.9",
+    year: "2009",
+    duration: "2h 42m",
+    genre: "Action / Fantasy / Sci-Fi",
+    language: "English",
+    description: "On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds to allow for free movement on Pandora. Jake Sully, a paralyzed former Marine, becomes mobile again through one such Avatar and falls in love with a Na'vi woman. As a bond with her grows, he is drawn into a battle for the survival of her world. A groundbreaking visual spectacle that explores themes of environmentalism, imperialism, and what it means to be human.",
+    director: "James Cameron",
+    writer: "James Cameron",
+    cast: "Sam Worthington, Zoe Saldana, Sigourney Weaver, Stephen Lang",
+    videoUrl: "https://youtu.be/5PSNL1qE6VY"
   }
 };
 
