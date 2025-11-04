@@ -7,6 +7,7 @@ import wkaanYaLaylaSeries from "@/assets/wkaan-ya-layla-movie.jpg";
 import jetSalimaSeries from "@/assets/jet-salima-series.jpg";
 import casablancaSeries from "@/assets/casablanca-series.jpg";
 import raniaWaSakeenaSeries from "@/assets/rania-wa-sakeena-series.jpg";
+import ahlaSultanSeries from "@/assets/ahla-sultan-series.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
@@ -20,11 +21,12 @@ const languageTitles: Record<string, string> = {
 const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
   arabic: {
     drama: [
-      { id: 1, title: "Desert Storm", image: "/placeholder.svg", rating: "8.5" },
-      { id: 2, title: "Cairo Nights", image: "/placeholder.svg", rating: "9.0" },
-      { id: 3, title: "The Kingdom", image: "/placeholder.svg", rating: "8.8" },
-      { id: 4, title: "Sands of Time", image: "/placeholder.svg", rating: "7.9" },
-      { id: 5, title: "The Nile", image: "/placeholder.svg", rating: "8.3" },
+      { id: 1, title: "أحلى سلطان", image: ahlaSultanSeries, rating: "8.3" },
+      { id: 2, title: "Desert Storm", image: "/placeholder.svg", rating: "8.5" },
+      { id: 3, title: "Cairo Nights", image: "/placeholder.svg", rating: "9.0" },
+      { id: 4, title: "The Kingdom", image: "/placeholder.svg", rating: "8.8" },
+      { id: 5, title: "Sands of Time", image: "/placeholder.svg", rating: "7.9" },
+      { id: 6, title: "The Nile", image: "/placeholder.svg", rating: "8.3" },
     ],
     comedy: [
       { id: 6, title: "جت سليمة", image: jetSalimaSeries, rating: "8.2" },
