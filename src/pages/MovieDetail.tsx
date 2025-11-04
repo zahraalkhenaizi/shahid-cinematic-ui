@@ -39,6 +39,7 @@ import villa69Movie from "@/assets/villa-69-movie.jpg";
 import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
 import movie122 from "@/assets/122-movie.jpg";
 import elKhaleyaMovie from "@/assets/el-khaleya-movie.jpg";
+import omommmMovie from "@/assets/3omomm-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -505,6 +506,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Tamer Mohsen",
     writer: "Baher Dewidar",
     cast: "Ahmed Ezz, Ahmed El Fishawy, Ahmed Dawood, Arwa Gouda",
+    videoUrl: "https://youtu.be/example"
+  },
+  "22": {
+    id: 22,
+    title: "عمهم",
+    image: omommmMovie,
+    rating: "7.3",
+    year: "2016",
+    duration: "1h 45m",
+    genre: "Action / Drama",
+    language: "Arabic (Egyptian)",
+    description: "A powerful action-drama about a veteran police officer known as 'Uncle' who becomes a mentor to a group of young officers. When they face a dangerous criminal organization, he must use his experience and wisdom to guide them through the most challenging case of their careers. The film explores themes of loyalty, leadership, and the price of justice. As tensions rise and danger escalates, Uncle must confront his own past while protecting his team and upholding the law he's sworn to serve.",
+    director: "Wael Abdullah",
+    writer: "Hossam Mousa",
+    cast: "Mohamed Ramadan, Dina El Sherbiny, Ayten Amer, Sayed Ragab",
     videoUrl: "https://youtu.be/example"
   }
 };
