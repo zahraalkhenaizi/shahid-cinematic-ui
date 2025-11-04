@@ -29,6 +29,7 @@ import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 import qaharHadidaMovie from "@/assets/qahar-hadida-movie.jpg";
 import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
 import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
+import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -345,6 +346,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Sameh Abdel Aziz",
     writer: "Ahmed Abdullah",
     cast: "Asser Yassin, Amr Youssef, Ahmed Dawood, Ahmed Malek",
+    videoUrl: "https://youtu.be/example"
+  },
+  "26": {
+    id: 26,
+    title: "ماما حامل",
+    image: babaHamilMovie,
+    rating: "7.3",
+    year: "2018",
+    duration: "1h 50m",
+    genre: "Comedy / Family",
+    language: "Arabic (Egyptian)",
+    description: "A hilarious comedy that turns traditional gender roles upside down when a husband magically becomes pregnant instead of his wife. As he experiences the challenges of pregnancy firsthand - from morning sickness to mood swings - he gains a newfound appreciation for what women go through. The film offers a fresh, comedic perspective on parenthood, marriage, and empathy while delivering non-stop laughs. A heartwarming story about understanding, respect, and the true meaning of partnership.",
+    director: "Ali Idris",
+    writer: "Karim Hassan Bashir",
+    cast: "Mohamed Sallam, Mai Omar, Hamdy Al Merghany, Sahar Al Sayegh",
     videoUrl: "https://youtu.be/example"
   }
 };
