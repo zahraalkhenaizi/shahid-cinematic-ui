@@ -6,11 +6,19 @@ import { Button } from "@/components/ui/button";
 import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 import ghadarMovie from "@/assets/ghadar-movie.jpg";
 import mantahabMovie from "@/assets/mantahab-movie.jpg";
+import avatarMovie from "@/assets/avatar-movie.jpg";
+import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
+import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
+import maleficentMovie from "@/assets/maleficent-movie.jpg";
+import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
+import elementalMovie from "@/assets/elemental-movie.jpg";
+import braveMovie from "@/assets/brave-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
   english: "English / Foreign Movies",
   indian: "Indian Movies",
+  disney: "Disney Movies",
   russian: "Russian Movies",
   turkish: "Turkish Movies",
   korean: "Korean Movies",
@@ -151,6 +159,21 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 60, title: "The Return", image: "/placeholder.svg", rating: "8.0" },
     ],
   },
+  disney: {
+    adventure: [
+      { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
+      { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
+      { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
+    ],
+    fantasy: [
+      { id: 64, title: "Maleficent", image: maleficentMovie, rating: "7.0" },
+      { id: 65, title: "Beauty and the Beast", image: beautyBeastMovie, rating: "7.1" },
+    ],
+    family: [
+      { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
+      { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
+    ],
+  },
 };
 
 const genreTitles: Record<string, string> = {
@@ -163,6 +186,7 @@ const genreTitles: Record<string, string> = {
   adventure: "Adventure",
   family: "Family",
   scifi: "Sci-Fi",
+  fantasy: "Fantasy",
 };
 
 const CategoryMovies = () => {
