@@ -31,6 +31,7 @@ import worldWar3Movie from "@/assets/world-war-3-movie.jpg";
 import woqoRabaqaMovie from "@/assets/woqo-rabaqa-movie.jpg";
 import babaHamilMovie from "@/assets/baba-hamil-movie.jpg";
 import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
+import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -377,6 +378,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Ismail Farouk",
     writer: "Karim Hassan Bashir",
     cast: "Mohamed Imam, Yasmin Sabry, Hassan Hosny, Bayoumi Fouad",
+    videoUrl: "https://youtu.be/example"
+  },
+  "28": {
+    id: 28,
+    title: "وش في وش",
+    image: weshWeshMovie,
+    rating: "7.4",
+    year: "2011",
+    duration: "1h 50m",
+    genre: "Comedy / Crime",
+    language: "Arabic (Egyptian)",
+    description: "A thrilling comedy that brings together two unlikely partners in a high-stakes game of cat and mouse. When a con artist and a straight-laced detective are forced to work together, their clashing personalities create chaos and comedy. As they go face-to-face with dangerous criminals, they must learn to trust each other to survive. The film delivers edge-of-your-seat action mixed with hilarious moments, exploring themes of trust, redemption, and the thin line between right and wrong.",
+    director: "Wael Ihsan",
+    writer: "Ahmed Abdallah",
+    cast: "Ahmed El Sakka, Maged El Kedwany, Hanan Turk, Edward",
     videoUrl: "https://youtu.be/example"
   }
 };
