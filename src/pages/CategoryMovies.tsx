@@ -29,6 +29,7 @@ import ayyamMovie from "@/assets/ayyam-movie.jpg";
 import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import restartMovie from "@/assets/restart-movie.jpg";
 import chicOneBabeMovie from "@/assets/chic-one-babe-movie.jpg";
+import movie122 from "@/assets/122-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -83,7 +84,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 10, title: "The Yacoubian Building", image: "/placeholder.svg", rating: "7.3" },
     ],
     action: [
-      { id: 11, title: "122", image: "/placeholder.svg", rating: "7.8" },
+      { id: 11, title: "122", image: movie122, rating: "7.8" },
       { id: 21, title: "الخلية", image: elKhaleyaMovie, rating: "7.5" },
       { id: 22, title: "عمهم", image: omommmMovie, rating: "7.3" },
       { id: 12, title: "The Treasure", image: "/placeholder.svg", rating: "7.3" },
