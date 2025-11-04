@@ -30,6 +30,7 @@ import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import restartMovie from "@/assets/restart-movie.jpg";
 import chicOneBabeMovie from "@/assets/chic-one-babe-movie.jpg";
 import movie122 from "@/assets/122-movie.jpg";
+import annabelleMovie from "@/assets/annabelle-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -114,6 +115,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
     ],
     horror: [
+      { id: 78, title: "Annabelle Comes Home", image: annabelleMovie, rating: "5.9" },
       { id: 71, title: "The Conjuring", image: "/placeholder.svg", rating: "7.5" },
       { id: 72, title: "A Quiet Place", image: "/placeholder.svg", rating: "7.5" },
       { id: 73, title: "Get Out", image: "/placeholder.svg", rating: "7.7" },
