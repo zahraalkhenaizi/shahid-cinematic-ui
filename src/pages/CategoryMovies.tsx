@@ -7,6 +7,7 @@ import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 import ghadarMovie from "@/assets/ghadar-movie.jpg";
 import mantahabMovie from "@/assets/mantahab-movie.jpg";
 import wkaanYaLaylaMovie from "@/assets/wkaan-ya-layla-movie.jpg";
+import villa69Movie from "@/assets/villa-69-movie.jpg";
 import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
@@ -52,6 +53,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
     drama: [
       { id: 6, title: "The Blue Elephant", image: "/placeholder.svg", rating: "8.5" },
       { id: 7, title: "Al-Haram", image: "/placeholder.svg", rating: "8.9" },
+      { id: 19, title: "فيلا 69", image: villa69Movie, rating: "7.2" },
       { id: 8, title: "Microphone", image: "/placeholder.svg", rating: "7.5" },
       { id: 9, title: "Clash", image: "/placeholder.svg", rating: "7.4" },
       { id: 10, title: "The Yacoubian Building", image: "/placeholder.svg", rating: "7.3" },
