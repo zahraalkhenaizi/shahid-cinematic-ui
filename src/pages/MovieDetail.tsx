@@ -14,6 +14,7 @@ import twilightMovie from "@/assets/twilight-movie.jpg";
 import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
+import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -106,6 +107,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Aline Brosh McKenna",
     cast: "Meryl Streep, Anne Hathaway, Emily Blunt, Stanley Tucci",
     videoUrl: "https://youtu.be/LyZDhg7V3Bo"
+  },
+  "95": {
+    id: 95,
+    title: "White Chicks",
+    image: whiteChicksMovie,
+    rating: "5.8",
+    year: "2004",
+    duration: "1h 49m",
+    genre: "Comedy / Crime",
+    language: "English",
+    description: "Two disgraced FBI agents, Kevin and Marcus Copeland, go deep undercover as Brittany and Tiffany Wilson, a pair of out-of-touch, privileged white daughters of a billionaire. When the real Wilson sisters are threatened with kidnapping, the agents must transform themselves from African-American men into blonde, blue-eyed socialites to protect their high-society charges. As they navigate Hampton's elite social scene, they find themselves in increasingly hilarious and absurd situations while trying to solve the case and maintain their cover.",
+    director: "Keenen Ivory Wayans",
+    writer: "Keenen Ivory Wayans, Shawn Wayans, Marlon Wayans",
+    cast: "Shawn Wayans, Marlon Wayans, Jaime King, Frankie Faison",
+    videoUrl: "https://youtu.be/dK0F9g1S8nE"
   }
 };
 
