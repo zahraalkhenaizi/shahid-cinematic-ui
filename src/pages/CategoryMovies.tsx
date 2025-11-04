@@ -40,6 +40,7 @@ import parentTrapMovie from "@/assets/parent-trap-movie.jpg";
 import corpseBrideMovie from "@/assets/corpse-bride-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
+import mrMrsSmithMovie from "@/assets/mr-mrs-smith-movie.jpg";
 
 const languageTitles: Record<string, string> = {
   arabic: "Arabic Movies",
@@ -123,6 +124,7 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 80, title: "Me Before You", image: meBeforeYouMovie, rating: "7.4" },
       { id: 81, title: "How to Lose a Guy in 10 Days", image: howToLoseAGuyMovie, rating: "6.4" },
       { id: 86, title: "The Devil Wears Prada", image: devilWearsPradaMovie, rating: "6.9" },
+      { id: 96, title: "Mr. & Mrs. Smith", image: mrMrsSmithMovie, rating: "6.5" },
       { id: 23, title: "The Shawshank Redemption", image: "/placeholder.svg", rating: "9.3" },
       { id: 24, title: "Forrest Gump", image: "/placeholder.svg", rating: "8.8" },
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
