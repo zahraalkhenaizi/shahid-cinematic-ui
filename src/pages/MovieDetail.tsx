@@ -15,6 +15,7 @@ import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 import howToLoseAGuyMovie from "@/assets/how-to-lose-a-guy-movie.jpg";
 import devilWearsPradaMovie from "@/assets/devil-wears-prada-movie.jpg";
 import whiteChicksMovie from "@/assets/white-chicks-movie.jpg";
+import annabelleMovie from "@/assets/annabelle-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -122,6 +123,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Keenen Ivory Wayans, Shawn Wayans, Marlon Wayans",
     cast: "Shawn Wayans, Marlon Wayans, Jaime King, Frankie Faison",
     videoUrl: "https://youtu.be/dK0F9g1S8nE"
+  },
+  "78": {
+    id: 78,
+    title: "Annabelle Comes Home",
+    image: annabelleMovie,
+    rating: "5.9",
+    year: "2019",
+    duration: "1h 46m",
+    genre: "Horror / Mystery",
+    language: "English",
+    description: "Determined to keep Annabelle from wreaking more havoc, paranormal investigators Ed and Lorraine Warren lock the possessed doll in the artifacts room in their home. But when the doll awakens the room's evil spirits, it soon becomes an unholy night of terror for the Warrens' 10-year-old daughter Judy, her babysitter, and the babysitter's friend. The teenagers must fight for their survival as Annabelle sets her sights on claiming new souls and unleashing a wave of supernatural horrors throughout the house.",
+    director: "Gary Dauberman",
+    writer: "Gary Dauberman",
+    cast: "Mckenna Grace, Madison Iseman, Katie Sarife, Patrick Wilson, Vera Farmiga",
+    videoUrl: "https://youtu.be/R5oXZbiYGl4"
   }
 };
 
