@@ -1,76 +1,131 @@
 import { useParams, Link } from "react-router-dom";
 import Navbar from "@/components/Navbar";
+import ContentCarousel from "@/components/ContentCarousel";
+import { ChevronLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { ArrowLeft, Star } from "lucide-react";
 
-// Mock data - replace with real data from your backend
-const mockSeries = {
-  arabic: [
-    { id: 1, title: "Desert Storm", rating: 8.5, year: 2024, seasons: 2 },
-    { id: 2, title: "Cairo Nights", rating: 9.0, year: 2023, seasons: 3 },
-    { id: 3, title: "The Kingdom", rating: 8.8, year: 2024, seasons: 1 },
-    { id: 4, title: "Sands of Time", rating: 7.9, year: 2023, seasons: 2 },
-  ],
-  foreign: [
-    { id: 5, title: "The Crown", rating: 9.2, year: 2024, seasons: 6 },
-    { id: 6, title: "Dark Waters", rating: 8.7, year: 2023, seasons: 3 },
-    { id: 7, title: "Breaking Dawn", rating: 9.5, year: 2024, seasons: 5 },
-    { id: 8, title: "The Bridge", rating: 8.4, year: 2023, seasons: 4 },
-  ],
-  indian: [
-    { id: 9, title: "Mumbai Diaries", rating: 8.6, year: 2024, seasons: 2 },
-    { id: 10, title: "Sacred Games", rating: 9.1, year: 2023, seasons: 2 },
-    { id: 11, title: "Delhi Crime", rating: 8.9, year: 2024, seasons: 3 },
-    { id: 12, title: "Mirzapur", rating: 8.7, year: 2023, seasons: 3 },
-  ],
-  turkish: [
-    { id: 13, title: "Istanbul Tales", rating: 8.3, year: 2024, seasons: 2 },
-    { id: 14, title: "The Ottoman", rating: 8.8, year: 2023, seasons: 4 },
-    { id: 15, title: "Love in Anatolia", rating: 7.9, year: 2024, seasons: 1 },
-    { id: 16, title: "Bosphorus Nights", rating: 8.5, year: 2023, seasons: 3 },
-  ],
-  korean: [
-    { id: 17, title: "Seoul Station", rating: 9.3, year: 2024, seasons: 2 },
-    { id: 18, title: "Squid Game", rating: 9.6, year: 2023, seasons: 2 },
-    { id: 19, title: "Kingdom", rating: 9.0, year: 2024, seasons: 3 },
-    { id: 20, title: "Hellbound", rating: 8.7, year: 2023, seasons: 2 },
-  ],
-  action: [
-    { id: 21, title: "Strike Force", rating: 8.9, year: 2024, seasons: 4 },
-    { id: 22, title: "The Assassin", rating: 8.6, year: 2023, seasons: 2 },
-    { id: 23, title: "Combat Zone", rating: 8.4, year: 2024, seasons: 3 },
-    { id: 24, title: "The Hunter", rating: 8.8, year: 2023, seasons: 2 },
-  ],
-  drama: [
-    { id: 25, title: "Broken Hearts", rating: 8.7, year: 2024, seasons: 3 },
-    { id: 26, title: "Family Ties", rating: 9.1, year: 2023, seasons: 5 },
-    { id: 27, title: "The Journey", rating: 8.5, year: 2024, seasons: 2 },
-    { id: 28, title: "Life's Path", rating: 8.9, year: 2023, seasons: 4 },
-  ],
-  comedy: [
-    { id: 29, title: "Laugh Out Loud", rating: 8.3, year: 2024, seasons: 3 },
-    { id: 30, title: "Office Hours", rating: 8.8, year: 2023, seasons: 6 },
-    { id: 31, title: "Friends Forever", rating: 9.2, year: 2024, seasons: 10 },
-    { id: 32, title: "The Sitcom", rating: 8.6, year: 2023, seasons: 4 },
-  ],
-};
-
-const categoryTitles: { [key: string]: string } = {
+const languageTitles: Record<string, string> = {
   arabic: "Arabic Series",
   foreign: "Foreign Series",
   indian: "Indian Series",
   turkish: "Turkish Series",
   korean: "Korean Series",
-  action: "Action Series",
-  drama: "Drama Series",
-  comedy: "Comedy Series",
+};
+
+// Mock series data organized by language and genre
+const seriesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
+  arabic: {
+    drama: [
+      { id: 1, title: "Desert Storm", image: "/placeholder.svg", rating: "8.5" },
+      { id: 2, title: "Cairo Nights", image: "/placeholder.svg", rating: "9.0" },
+      { id: 3, title: "The Kingdom", image: "/placeholder.svg", rating: "8.8" },
+      { id: 4, title: "Sands of Time", image: "/placeholder.svg", rating: "7.9" },
+      { id: 5, title: "The Nile", image: "/placeholder.svg", rating: "8.3" },
+    ],
+    comedy: [
+      { id: 6, title: "Laugh Nights", image: "/placeholder.svg", rating: "7.8" },
+      { id: 7, title: "Cairo Comedy", image: "/placeholder.svg", rating: "8.1" },
+      { id: 8, title: "Family Laughs", image: "/placeholder.svg", rating: "7.5" },
+    ],
+    action: [
+      { id: 9, title: "The Chase", image: "/placeholder.svg", rating: "8.4" },
+      { id: 10, title: "Desert Warriors", image: "/placeholder.svg", rating: "8.0" },
+    ],
+    thriller: [
+      { id: 11, title: "Dark Secrets", image: "/placeholder.svg", rating: "8.6" },
+      { id: 12, title: "The Mystery", image: "/placeholder.svg", rating: "8.2" },
+    ],
+  },
+  foreign: {
+    drama: [
+      { id: 13, title: "The Crown", image: "/placeholder.svg", rating: "9.2" },
+      { id: 14, title: "Dark Waters", image: "/placeholder.svg", rating: "8.7" },
+      { id: 15, title: "Breaking Dawn", image: "/placeholder.svg", rating: "9.5" },
+      { id: 16, title: "The Bridge", image: "/placeholder.svg", rating: "8.4" },
+      { id: 17, title: "Northern Lights", image: "/placeholder.svg", rating: "8.9" },
+    ],
+    thriller: [
+      { id: 18, title: "True Detective", image: "/placeholder.svg", rating: "9.0" },
+      { id: 19, title: "The Sinner", image: "/placeholder.svg", rating: "8.1" },
+      { id: 20, title: "Mindhunter", image: "/placeholder.svg", rating: "8.6" },
+    ],
+    scifi: [
+      { id: 21, title: "Stranger Things", image: "/placeholder.svg", rating: "8.7" },
+      { id: 22, title: "Westworld", image: "/placeholder.svg", rating: "8.5" },
+      { id: 23, title: "Black Mirror", image: "/placeholder.svg", rating: "8.8" },
+    ],
+    comedy: [
+      { id: 24, title: "The Office", image: "/placeholder.svg", rating: "9.0" },
+      { id: 25, title: "Brooklyn Nine-Nine", image: "/placeholder.svg", rating: "8.4" },
+    ],
+  },
+  indian: {
+    drama: [
+      { id: 26, title: "Mumbai Diaries", image: "/placeholder.svg", rating: "8.6" },
+      { id: 27, title: "Sacred Games", image: "/placeholder.svg", rating: "9.1" },
+      { id: 28, title: "Delhi Crime", image: "/placeholder.svg", rating: "8.9" },
+      { id: 29, title: "Mirzapur", image: "/placeholder.svg", rating: "8.7" },
+    ],
+    thriller: [
+      { id: 30, title: "Breathe", image: "/placeholder.svg", rating: "8.3" },
+      { id: 31, title: "Paatal Lok", image: "/placeholder.svg", rating: "8.2" },
+    ],
+    comedy: [
+      { id: 32, title: "Panchayat", image: "/placeholder.svg", rating: "8.8" },
+      { id: 33, title: "The Family Man", image: "/placeholder.svg", rating: "8.7" },
+    ],
+  },
+  turkish: {
+    drama: [
+      { id: 34, title: "Istanbul Tales", image: "/placeholder.svg", rating: "8.3" },
+      { id: 35, title: "The Ottoman", image: "/placeholder.svg", rating: "8.8" },
+      { id: 36, title: "Love in Anatolia", image: "/placeholder.svg", rating: "7.9" },
+      { id: 37, title: "Bosphorus Nights", image: "/placeholder.svg", rating: "8.5" },
+    ],
+    romance: [
+      { id: 38, title: "Endless Love", image: "/placeholder.svg", rating: "7.6" },
+      { id: 39, title: "Ask Laftan Anlamaz", image: "/placeholder.svg", rating: "8.0" },
+    ],
+    thriller: [
+      { id: 40, title: "Ethos", image: "/placeholder.svg", rating: "7.8" },
+    ],
+  },
+  korean: {
+    thriller: [
+      { id: 41, title: "Seoul Station", image: "/placeholder.svg", rating: "9.3" },
+      { id: 42, title: "Squid Game", image: "/placeholder.svg", rating: "9.6" },
+      { id: 43, title: "Kingdom", image: "/placeholder.svg", rating: "9.0" },
+      { id: 44, title: "Hellbound", image: "/placeholder.svg", rating: "8.7" },
+      { id: 45, title: "Sweet Home", image: "/placeholder.svg", rating: "7.4" },
+    ],
+    drama: [
+      { id: 46, title: "It's Okay to Not Be Okay", image: "/placeholder.svg", rating: "8.7" },
+      { id: 47, title: "Hospital Playlist", image: "/placeholder.svg", rating: "9.1" },
+      { id: 48, title: "Reply 1988", image: "/placeholder.svg", rating: "9.0" },
+    ],
+    romance: [
+      { id: 49, title: "Crash Landing on You", image: "/placeholder.svg", rating: "8.7" },
+      { id: 50, title: "Goblin", image: "/placeholder.svg", rating: "8.6" },
+    ],
+  },
+};
+
+const genreTitles: Record<string, string> = {
+  comedy: "Comedy",
+  drama: "Drama",
+  romance: "Romance",
+  horror: "Horror",
+  action: "Action",
+  thriller: "Thriller",
+  adventure: "Adventure",
+  family: "Family",
+  scifi: "Sci-Fi",
 };
 
 const CategorySeries = () => {
-  const { categoryId } = useParams();
-  const series = mockSeries[categoryId as keyof typeof mockSeries] || [];
-  const categoryTitle = categoryTitles[categoryId as string] || "Series";
+  const { categoryId } = useParams<{ categoryId: string }>();
+  const languageTitle = languageTitles[categoryId || ""] || "Series";
+  const seriesByGenre = seriesByLanguageAndGenre[categoryId || ""] || {};
 
   return (
     <div className="min-h-screen bg-background">
@@ -79,39 +134,21 @@ const CategorySeries = () => {
       <main className="container mx-auto px-4 pt-24 pb-12">
         <div className="mb-8">
           <Link to="/series">
-            <Button variant="ghost" className="mb-4 -ml-4">
-              <ArrowLeft className="mr-2 h-4 w-4" />
+            <Button variant="ghost" size="sm" className="mb-4">
+              <ChevronLeft className="h-4 w-4 mr-1" />
               Back to Categories
             </Button>
           </Link>
-          <h1 className="text-4xl font-bold mb-2 text-shadow">{categoryTitle}</h1>
-          <p className="text-muted-foreground">Discover amazing series in this category</p>
+          <h1 className="text-4xl font-bold mb-6 text-shadow">{languageTitle}</h1>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
-          {series.map((show) => (
-            <Link key={show.id} to={`/series/detail/${show.id}`}>
-              <Card className="overflow-hidden border-border bg-card/50 backdrop-blur-sm card-hover cursor-pointer">
-                <div className="aspect-[2/3] bg-gradient-to-br from-primary/20 to-accent/20 relative">
-                  <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
-                    <span className="text-6xl opacity-20">📺</span>
-                  </div>
-                </div>
-                <CardContent className="p-4">
-                  <h3 className="font-bold text-lg mb-2 line-clamp-1">{show.title}</h3>
-                  <div className="flex items-center justify-between text-sm text-muted-foreground">
-                    <div className="flex items-center gap-1">
-                      <Star className="h-4 w-4 fill-primary text-primary" />
-                      <span>{show.rating}</span>
-                    </div>
-                    <span>{show.year}</span>
-                  </div>
-                  <p className="text-xs text-muted-foreground mt-1">{show.seasons} Season{show.seasons > 1 ? 's' : ''}</p>
-                </CardContent>
-              </Card>
-            </Link>
-          ))}
-        </div>
+        {Object.entries(seriesByGenre).map(([genreId, series]) => (
+          <ContentCarousel
+            key={genreId}
+            title={genreTitles[genreId] || genreId}
+            items={series}
+          />
+        ))}
       </main>
     </div>
   );
