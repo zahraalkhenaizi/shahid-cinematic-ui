@@ -127,6 +127,16 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 25, title: "Fight Club", image: "/placeholder.svg", rating: "8.8" },
       { id: 26, title: "The Godfather", image: "/placeholder.svg", rating: "9.2" },
     ],
+    comedy: [
+      { id: 87, title: "The Hangover", image: "/placeholder.svg", rating: "7.7" },
+      { id: 88, title: "Bridesmaids", image: "/placeholder.svg", rating: "6.8" },
+      { id: 89, title: "Superbad", image: "/placeholder.svg", rating: "7.6" },
+      { id: 90, title: "Step Brothers", image: "/placeholder.svg", rating: "6.9" },
+      { id: 91, title: "21 Jump Street", image: "/placeholder.svg", rating: "7.2" },
+      { id: 92, title: "Anchorman", image: "/placeholder.svg", rating: "7.1" },
+      { id: 93, title: "Mean Girls", image: "/placeholder.svg", rating: "7.1" },
+      { id: 94, title: "Pitch Perfect", image: "/placeholder.svg", rating: "7.1" },
+    ],
     horror: [
       { id: 78, title: "Annabelle Comes Home", image: annabelleMovie, rating: "5.9" },
       { id: 71, title: "The Conjuring", image: "/placeholder.svg", rating: "7.5" },
