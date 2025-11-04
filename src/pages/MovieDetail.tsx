@@ -34,6 +34,7 @@ import helmAlqalbMovie from "@/assets/helm-alqalb-movie.jpg";
 import weshWeshMovie from "@/assets/wesh-wesh-movie.jpg";
 import asheqMovie from "@/assets/asheq-movie.jpg";
 import ayyamMovie from "@/assets/ayyam-movie.jpg";
+import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -425,6 +426,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Hani Khalifa",
     writer: "Marwan Hamed",
     cast: "Khaled Abol Naga, Mona Zaki, Ahmed Helmy, Amr Waked",
+    videoUrl: "https://youtu.be/example"
+  },
+  "70": {
+    id: 70,
+    title: "أغلى سعر",
+    image: aghlaSearMovie,
+    rating: "7.8",
+    year: "2007",
+    duration: "2h 5m",
+    genre: "Drama / Thriller",
+    language: "Arabic (Egyptian)",
+    description: "A gripping psychological drama that explores the devastating consequences of ambition and greed. When a successful businessman is forced to confront the moral price of his wealth and status, he must decide what truly matters in life. The film delves into themes of corruption, redemption, and the sacrifices we make in pursuit of success. As secrets unravel and loyalties are tested, he discovers that some costs are too high to pay. A powerful examination of values, integrity, and the true meaning of success.",
+    director: "Khaled Youssef",
+    writer: "Nasser Abdel Rahman",
+    cast: "Ahmed Ezz, Ghada Abdel Razek, Khaled Saleh, Sawsan Badr",
     videoUrl: "https://youtu.be/example"
   }
 };
