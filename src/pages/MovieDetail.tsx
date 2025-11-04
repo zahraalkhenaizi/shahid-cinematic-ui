@@ -21,6 +21,7 @@ import avatarMovie from "@/assets/avatar-movie.jpg";
 import aliceWonderlandMovie from "@/assets/alice-wonderland-movie.jpg";
 import howToTrainDragonMovie from "@/assets/how-to-train-dragon-movie.jpg";
 import maleficentMovie from "@/assets/maleficent-movie.jpg";
+import beautyBeastMovie from "@/assets/beauty-beast-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -218,6 +219,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Linda Woolverton",
     cast: "Angelina Jolie, Elle Fanning, Sharlto Copley, Sam Riley",
     videoUrl: "https://youtu.be/w-XO4XiRop0"
+  },
+  "65": {
+    id: 65,
+    title: "Beauty and the Beast",
+    image: beautyBeastMovie,
+    rating: "7.1",
+    year: "2017",
+    duration: "2h 9m",
+    genre: "Family / Fantasy / Musical",
+    language: "English",
+    description: "A live-action adaptation of Disney's animated classic, this enchanting tale follows Belle, a bright, beautiful and independent young woman who is taken prisoner by a Beast in his castle. Despite her fears, she befriends the castle's enchanted staff and learns to look beyond the Beast's hideous exterior and realize the kind heart and soul of the true Prince within. As the two spend time together, a romance begins to bloom, but time is running out. If the Beast does not learn to love another and earn their love in return by the time the last petal falls from an enchanted rose, he and his servants will remain cursed forever.",
+    director: "Bill Condon",
+    writer: "Stephen Chbosky, Evan Spiliotopoulos",
+    cast: "Emma Watson, Dan Stevens, Luke Evans, Josh Gad",
+    videoUrl: "https://youtu.be/OvW_L8sTu5E"
   }
 };
 
