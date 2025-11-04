@@ -11,6 +11,7 @@ import movie4 from "@/assets/movie-4.jpg";
 import arabicComedyMovie from "@/assets/arabic-comedy-movie.jpg";
 import titanicMovie from "@/assets/titanic-movie.jpg";
 import twilightMovie from "@/assets/twilight-movie.jpg";
+import meBeforeYouMovie from "@/assets/me-before-you-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -58,6 +59,21 @@ const moviesDatabase: Record<string, any> = {
     writer: "Melissa Rosenberg",
     cast: "Kristen Stewart, Robert Pattinson, Taylor Lautner, Billy Burke",
     videoUrl: "https://youtu.be/QDRLSqm_WVg"
+  },
+  "80": {
+    id: 80,
+    title: "Me Before You",
+    image: meBeforeYouMovie,
+    rating: "7.4",
+    year: "2016",
+    duration: "1h 50m",
+    genre: "Drama / Romance",
+    language: "English",
+    description: "Louisa 'Lou' Clark lives in a quaint town in the English countryside. With no clear direction in her life, the quirky and creative 26-year-old goes from one job to the next in order to help her tight-knit family make ends meet. Her normally cheery outlook is put to the test when she becomes a caregiver for Will Traynor, a wealthy young banker who became wheelchair-bound in an accident. Despite their polar opposite personalities, Lou and Will develop an unlikely bond as she becomes determined to show him that life is worth living.",
+    director: "Thea Sharrock",
+    writer: "Jojo Moyes",
+    cast: "Emilia Clarke, Sam Claflin, Janet McTeer, Charles Dance",
+    videoUrl: "https://youtu.be/Eh993__rOxA"
   }
 };
 
