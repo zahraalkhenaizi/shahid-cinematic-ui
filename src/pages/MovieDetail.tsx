@@ -36,6 +36,7 @@ import asheqMovie from "@/assets/asheq-movie.jpg";
 import ayyamMovie from "@/assets/ayyam-movie.jpg";
 import aghlaSearMovie from "@/assets/aghla-sear-movie.jpg";
 import villa69Movie from "@/assets/villa-69-movie.jpg";
+import minYesaddaqMovie from "@/assets/min-yesaddaq-movie.jpg";
 
 // Mock movie database
 const moviesDatabase: Record<string, any> = {
@@ -457,6 +458,21 @@ const moviesDatabase: Record<string, any> = {
     director: "Tareq El Eryan",
     writer: "Belal Fadl",
     cast: "Hani Salama, Menna Shalabi, Ahmed Dawoud, Bushra",
+    videoUrl: "https://youtu.be/example"
+  },
+  "20": {
+    id: 20,
+    title: "مين يصدق",
+    image: minYesaddaqMovie,
+    rating: "7.8",
+    year: "2004",
+    duration: "2h 0m",
+    genre: "Drama / Mystery",
+    language: "Arabic (Egyptian)",
+    description: "An intriguing psychological drama that blurs the lines between truth and deception. When a series of mysterious events unfold, the question becomes: who can you believe? The film masterfully weaves together multiple perspectives and unreliable narrators, keeping audiences guessing until the very end. As layers of secrets are peeled back, it explores themes of trust, perception, and the nature of reality itself. A compelling meditation on how our biases shape what we choose to believe and the consequences of living in denial.",
+    director: "Mohamed Diab",
+    writer: "Mohamed Diab",
+    cast: "Menna Shalabi, Bassem Samra, Nahed El Sebai, Ahmed Kamal",
     videoUrl: "https://youtu.be/example"
   }
 };
