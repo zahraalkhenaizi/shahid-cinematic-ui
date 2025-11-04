@@ -98,6 +98,15 @@ const moviesByLanguageAndGenre: Record<string, Record<string, any[]>> = {
       { id: 32, title: "The Grand Budapest Hotel", image: "/placeholder.svg", rating: "8.1" },
       { id: 33, title: "Superbad", image: "/placeholder.svg", rating: "7.6" },
     ],
+    disney: [
+      { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
+      { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
+      { id: 63, title: "How to Train Your Dragon", image: howToTrainDragonMovie, rating: "8.1" },
+      { id: 64, title: "Maleficent", image: maleficentMovie, rating: "7.0" },
+      { id: 65, title: "Beauty and the Beast", image: beautyBeastMovie, rating: "7.1" },
+      { id: 66, title: "Elemental", image: elementalMovie, rating: "7.0" },
+      { id: 67, title: "Brave", image: braveMovie, rating: "7.1" },
+    ],
     adventure: [
       { id: 61, title: "Avatar", image: avatarMovie, rating: "7.9" },
       { id: 62, title: "Alice in Wonderland", image: aliceWonderlandMovie, rating: "6.4" },
@@ -184,6 +193,7 @@ const genreTitles: Record<string, string> = {
   family: "Family",
   scifi: "Sci-Fi",
   fantasy: "Fantasy",
+  disney: "Disney Movies",
 };
 
 const CategoryMovies = () => {
